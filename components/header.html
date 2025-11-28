@@ -1,0 +1,258 @@
+<!-- 导航栏 -->
+<header class="header">
+    <!-- 第一行：Logo + 律所名称、电话、语言选择 -->
+    <div class="header-top">
+        <div class="header-top-container">
+            <!-- Logo + 律所名称 -->
+            <div class="header-left">
+                <a href="about.html" class="header-logo">
+                    <img src="images/logo.png" alt="吕昕橦律师事务所">
+                </a>
+                <div class="header-firm-name" data-i18n="header.firmName">
+                    吕昕橦律师事务所
+                </div>
+            </div>
+
+            <!-- 右侧：电话和语言选择 -->
+            <div class="header-right">
+                <span class="header-phone" id="header-phone">📞 (212)812-8253</span>
+                <div class="lang-toggle">
+                    <span id="lang-zh" class="lang-option active" onclick="switchLanguage('zh')">中文</span>
+                    <span class="lang-separator">/</span>
+                    <span id="lang-en" class="lang-option" onclick="switchLanguage('en')">EN</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第二行：导航菜单 -->
+    <nav class="header-nav">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="about.html" data-i18n="nav.about">关于我们</a></li>
+                <li><a href="services.html" data-i18n="nav.services">业务领域</a></li>
+                <li><a href="appointment.html" data-i18n="nav.appointment">案件咨询</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">联系方式</a></li>
+                <li><a href="joinus.html" data-i18n="nav.joinus">加入我们</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<style>
+    /* Header 整体样式 */
+    .header {
+        position: relative;
+        width: 100%;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    /* 第一行样式 */
+    .header-top {
+        border-bottom: none;
+        padding: 15px 0;
+    }
+
+    .header-top-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* 左侧：Logo + 律所名称 */
+    .header-left {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .header-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-logo img {
+        height: 60px;
+        width: auto;
+    }
+
+    /* 律所名称 */
+    .header-firm-name {
+        font-size: 28px;
+        font-weight: bold;
+        color: #2c2c2c;
+        letter-spacing: 2px;
+        white-space: nowrap;
+    }
+
+    /* 右侧：电话和语言 */
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header-phone {
+        color: #8B2635;
+        font-weight: bold;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    .lang-toggle {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 2px solid #8B2635;
+        padding: 8px 15px;
+        border-radius: 5px;
+    }
+
+    .lang-option {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+        color: #8B2635;
+        transition: all 0.3s;
+        opacity: 0.5;
+    }
+
+    .lang-option.active {
+        opacity: 1;
+        text-decoration: underline;
+    }
+
+    .lang-option:hover {
+        opacity: 1;
+    }
+
+    .lang-separator {
+        color: #8B2635;
+        font-weight: bold;
+    }
+
+    /* 第二行：导航菜单 */
+    .header-nav {
+        padding: 15px 0;
+    }
+
+    .nav-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        gap: 0;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .nav-menu li a {
+        color: #2c2c2c;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        transition: color 0.3s;
+        cursor: pointer;
+    }
+
+    .nav-menu li a:hover {
+        color: #8B2635;
+    }
+
+    /* 调整主内容区域的margin */
+    .main-content {
+        margin-top: 40px !important;
+    }
+
+    /* 移动端响应式样式 */
+    @media (max-width: 768px) {
+        .header-top {
+            padding: 10px 0;
+        }
+
+        .header-top-container {
+            padding: 0 15px;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .header-left {
+            gap: 15px;
+        }
+
+        .header-logo img {
+            height: 40px;
+        }
+
+        .header-firm-name {
+            font-size: 16px;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .header-right {
+            gap: 10px;
+        }
+
+        .header-phone {
+            font-size: 12px;
+        }
+
+        .lang-toggle {
+            padding: 5px 10px;
+        }
+
+        .lang-option {
+            font-size: 12px;
+        }
+
+        .header-nav {
+            padding: 10px 0;
+        }
+
+        .nav-container {
+            padding: 0 15px;
+        }
+
+        .nav-menu {
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            max-width: 100%;
+        }
+
+        .nav-menu li a {
+            font-size: 14px;
+        }
+
+        .main-content {
+            margin-top: 20px !important;
+        }
+    }
+</style>
+
+<script>
+// 更新导航栏联系信息
+if (typeof getContactInfo === 'function') {
+    const info = getContactInfo();
+    const lawyerNameEl = document.getElementById('header-lawyer-name');
+    const phoneEl = document.getElementById('header-phone');
+
+    if (lawyerNameEl) lawyerNameEl.textContent = info.lawyerName;
+    if (phoneEl) phoneEl.textContent = `📞 ${info.phone1}`;
+}
+</script>
