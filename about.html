@@ -6,47 +6,32 @@
     <title>关于我们 - 美国信律恒达律师事务所</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* 内容区域白色半透明背景 */
-        .main-content > section {
-            background: rgba(255, 255, 255, 0.95) !important;
-            border-radius: 15px;
-            padding: 40px;
-            margin: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        /* 所有背景透明 */
+        .main-content, .main-content > section, .main-content > div {
+            background: transparent !important;
         }
-        .hero-section {
-            background: rgba(255, 255, 255, 0.9) !important;
+        .hero-section, .appointment-form, .page-footer, .footer-info, .footer-content {
+            background: transparent !important;
             border: none !important;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1) !important;
-            border-radius: 10px;
+            box-shadow: none !important;
         }
-        .appointment-form {
-            background: rgba(255, 255, 255, 0.95) !important;
-            border: none !important;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1) !important;
+        .header, .header-top, .header-nav {
+            background: transparent !important;
         }
-        .page-footer {
-            background: rgba(255, 255, 255, 0.95) !important;
-            border: none !important;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1) !important;
-            border-radius: 15px;
-            margin: 20px;
+        /* 所有文字改为白色，在深色背景上更清晰 */
+        h1, h2, h3, h4, h5, h6, p, span, div, label, input, textarea, select, li, a, strong {
+            color: #ffffff !important;
         }
-        /* 所有文字改为黑色 */
-        h1, h2, h3, h4, h5, h6, p, span, div, label, input, textarea, select {
-            color: #2c2c2c !important;
+        .section-title {
+            color: #ffffff !important;
         }
         /* 提交按钮保持白色文字 */
         .submit-btn {
             color: #fff !important;
         }
-        .section-title {
-            color: #2c2c2c !important;
-        }
-        .page-footer h2, .page-footer h3, .page-footer p, .page-footer span, .page-footer strong {
-            color: #2c2c2c !important;
-        }
-        .page-footer .availability {
+        /* 输入框保持可见 */
+        input, textarea, select {
+            background: rgba(255,255,255,0.9) !important;
             color: #2c2c2c !important;
         }
     </style>
@@ -61,7 +46,7 @@
         <section id="about">
             <h2 class="section-title" data-i18n="about.title">关于我们</h2>
 
-            <div style="max-width: 1000px; margin: 40px auto; background: white;">
+            <div style="max-width: 1000px; margin: 40px auto; background: transparent;">
                 <div style="text-align: left; line-height: 2; font-size: 18px; color: #2c2c2c;">
                     <p data-i18n="about.paragraph1" style="margin-bottom: 25px;">
                         美国信律恒达律师事务所由一支资深且高素质的专业律师团队组成。事务所律师均毕业于美国知名法学院，并取得法律博士（Juris Doctor）学位，精通中英双语，熟悉美国法律体系，具备扎实的法律理论基础与实践能力。本所律师曾在政府机构、司法部门、国际知名律师事务所，以及大型企业从事法律工作，在各自专业领域累积了丰富的执业经验与成功案例。
