@@ -587,6 +587,10 @@
                 }
                 const html = await response.text();
                 document.getElementById(targetId).innerHTML = html;
+                // 组件加载后立即翻译
+                if (typeof forceUpdateTranslations === 'function') {
+                    forceUpdateTranslations();
+                }
             } catch (error) {
                 console.error(`Error loading component ${componentName}:`, error);
             }

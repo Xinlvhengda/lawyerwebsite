@@ -1387,10 +1387,11 @@ function switchLanguage(lang) {
         localStorage.setItem('language', lang);
         // 立即更新一次
         updatePageLanguage();
-        // 延迟再更新一次，确保所有动态加载的内容都被翻译
-        setTimeout(() => {
-            updatePageLanguage();
-        }, 200);
+        // 多次延迟更新，确保网络环境下所有动态加载的内容都被翻译
+        setTimeout(() => updatePageLanguage(), 100);
+        setTimeout(() => updatePageLanguage(), 300);
+        setTimeout(() => updatePageLanguage(), 600);
+        setTimeout(() => updatePageLanguage(), 1000);
     }
 }
 
