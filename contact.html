@@ -97,6 +97,10 @@
             await loadSection('contact-info', 'contact-info-container');
             await loadSection('appointment', 'section-appointment');
             await loadComponent('footer', 'footer-container');
+            // 确保所有翻译都已应用
+            if (typeof forceUpdateTranslations === 'function') {
+                forceUpdateTranslations();
+            }
         });
     </script>
 </body>

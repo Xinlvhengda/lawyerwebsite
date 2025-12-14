@@ -705,6 +705,10 @@
         // 页面加载时自动加载组件
         document.addEventListener('DOMContentLoaded', async function() {
             await loadComponent('header', 'header-container');
+            // 确保所有翻译都已应用
+            if (typeof forceUpdateTranslations === 'function') {
+                forceUpdateTranslations();
+            }
         });
     </script>
 </body>

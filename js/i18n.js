@@ -69,7 +69,8 @@ const translations = {
             officeHours: '办公时间',
             officeHoursContent: '周一至周五 9:00 AM - 5:30 PM<br>周六，日（仅限预约）',
             wechatQRCode: '微信二维码',
-            mapTitle: '办公地点'
+            mapTitle: '办公地点',
+            copyright: '©2025 恒达律师事务所 版权所有 由 POLARIS.D LLC 创建'
         },
         immigration: {
             title: '移民服务',
@@ -700,7 +701,7 @@ const translations = {
             paragraph1: 'Hengda Law Firm is a New York–based boutique focused on U.S. immigration and cross-border commercial compliance and disputes, serving clients across the United States and China, with particular depth in e-commerce, technology, and creator-led businesses. We advise on sophisticated employment- and investment-based immigration matters—EB-1A, NIW, O-1, L-1, and EB-5—through disciplined, evidence-driven advocacy and structured legal briefing. We also counsel businesses on entity structuring and core commercial documentation (LLC/corporation formation), platform compliance, intellectual property protection, and targeted risk response for Schedule A/TRO matters, CPSC product safety compliance and investigations, and Amazon APEX proceedings.',
             paragraph2: 'Our attorneys are admitted to practice in New York and New Jersey and hold court admissions in the U.S. District Court for the Southern District of New York (S.D.N.Y.), the Eastern District of New York (E.D.N.Y.), the Northern District of Illinois (N.D. Ill.), and the Southern District of Illinois (S.D. Ill.).',
             paragraph3: '',
-            value1: '',
+            value1: 'Professional Excellence.',
             value2: 'Dedicated Approach.',
             value3: 'Efficient Results.',
             value4: 'Trusted by Clients.'
@@ -748,7 +749,8 @@ const translations = {
             officeHours: 'Office Hours',
             officeHoursContent: 'Mon-Fri 9:00 AM - 5:30 PM<br>Sat&Sun By Appointment Only',
             wechatQRCode: 'WeChat QR Code',
-            mapTitle: 'Office Location'
+            mapTitle: 'Office Location',
+            copyright: '©2025 Heng Da Law Firm. All Rights Reserved. Created by POLARIS.D LLC'
         },
         immigration: {
             title: 'Immigration Services',
@@ -1383,7 +1385,12 @@ function t(key) {
 function switchLanguage(lang) {
     if (lang && (lang === 'zh' || lang === 'en')) {
         localStorage.setItem('language', lang);
+        // 立即更新一次
         updatePageLanguage();
+        // 延迟再更新一次，确保所有动态加载的内容都被翻译
+        setTimeout(() => {
+            updatePageLanguage();
+        }, 200);
     }
 }
 
@@ -1449,13 +1456,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 mutation.addedNodes.length > 0 &&
                 Array.from(mutation.addedNodes).some(node =>
                     node.nodeType === 1 && // 只处理元素节点
-                    (node.querySelector('[data-i18n]') || node.hasAttribute('data-i18n'))
+                    (node.querySelector('[data-i18n]') || node.querySelector('[data-i18n-html]') || node.querySelector('[data-i18n-placeholder]') ||
+                     node.hasAttribute('data-i18n') || node.hasAttribute('data-i18n-html') || node.hasAttribute('data-i18n-placeholder'))
                 )
             );
             if (hasNewContent) {
                 updatePageLanguage();
             }
-        }, 100);
+        }, 50);
     });
 
     // 监听整个body的变化
@@ -1465,7 +1473,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// 强制刷新所有翻译（用于组件加载后确保翻译应用）
+function forceUpdateTranslations() {
+    updatePageLanguage();
+}
+
 // 导出到全局
 window.t = t;
 window.switchLanguage = switchLanguage;
 window.getCurrentLang = getCurrentLang;
+window.forceUpdateTranslations = forceUpdateTranslations;

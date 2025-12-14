@@ -206,6 +206,10 @@
             await loadSection('services-iplitigation', 'section-services-iplitigation');
             await loadSection('services-ipstrategy', 'section-services-ipstrategy');
             await loadComponent('footer', 'footer-container');
+            // 确保所有翻译都已应用
+            if (typeof forceUpdateTranslations === 'function') {
+                forceUpdateTranslations();
+            }
         });
     </script>
 </body>
