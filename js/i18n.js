@@ -746,7 +746,7 @@ const translations = {
             email: 'Email',
             wechat: 'WeChat',
             officeHours: 'Office Hours',
-            officeHoursContent: 'Monday - Friday: 9:00 AM - 5:30 PM<br>Saturday & Sunday: By Appointment Only',
+            officeHoursContent: 'Mon-Fri 9:00 AM - 5:30 PM<br>Sat&Sun By Appointment Only',
             wechatQRCode: 'WeChat QR Code',
             mapTitle: 'Office Location'
         },
