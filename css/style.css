@@ -15,7 +15,8 @@
 
         /* 顶部导航栏 */
         .header {
-            background: #e4dccf;
+            background: url('../images/new-bg.png') no-repeat center center;
+            background-size: cover;
             border-bottom: 3px solid #ffffff;
             padding: 0;
             position: fixed;
