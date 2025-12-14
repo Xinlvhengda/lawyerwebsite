@@ -45,6 +45,9 @@
         <div id="section-appointment"></div>
     </main>
 
+    <!-- 页脚容器 -->
+    <div id="footer-container"></div>
+
     <script src="js/config.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/modules/caseData.js"></script>
@@ -83,6 +86,7 @@
         document.addEventListener('DOMContentLoaded', async function() {
             await loadComponent('header', 'header-container');
             await loadSection('appointment', 'section-appointment');
+            await loadComponent('footer', 'footer-container');
         });
     </script>
 </body>

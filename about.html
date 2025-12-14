@@ -60,6 +60,9 @@
         </section>
     </main>
 
+    <!-- 页脚容器 -->
+    <div id="footer-container"></div>
+
     <script src="js/config.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/modules/caseData.js"></script>
@@ -97,6 +100,7 @@
         // 页面加载时自动加载所有模块
         document.addEventListener('DOMContentLoaded', async function() {
             await loadComponent('header', 'header-container');
+            await loadComponent('footer', 'footer-container');
         });
     </script>
 </body>
