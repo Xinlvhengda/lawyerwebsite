@@ -10,7 +10,7 @@
         .main-content, .main-content > section, .main-content > div {
             background: transparent !important;
         }
-        .page-footer, .footer-info, .footer-content {
+        .hero-section, .appointment-form, .page-footer, .footer-info, .footer-content {
             background: transparent !important;
             border: none !important;
             box-shadow: none !important;
@@ -19,11 +19,20 @@
             background: transparent !important;
         }
         /* 所有文字改为深灰色 */
-        h1, h2, h3, h4, h5, h6, p, span, div, label, strong, a {
+        h1, h2, h3, h4, h5, h6, p, span, div, label, li, a, strong {
             color: #333333 !important;
         }
         .section-title {
             color: #333333 !important;
+        }
+        /* 提交按钮改为深灰色文字 */
+        .submit-btn {
+            color: #333333 !important;
+        }
+        /* 输入框保持可见 */
+        input, textarea, select {
+            background: rgba(255,255,255,0.9) !important;
+            color: #2c2c2c !important;
         }
         .footer-contact-item, .footer-contact-item strong {
             color: #333333 !important;
@@ -36,16 +45,35 @@
 
     <!-- 主要内容 -->
     <main class="main-content">
+        <!-- 预约律师咨询区域 -->
+        <div id="section-appointment"></div>
+
+        <!-- 联系方式区域 -->
         <section id="contact">
-            <!-- 页面底部联系信息容器 -->
             <div id="footer-container"></div>
         </section>
     </main>
 
     <script src="js/config.js"></script>
     <script src="js/i18n.js"></script>
+    <script src="js/modules/caseData.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/navigation.js"></script>
     <script>
+        // 模块加载器
+        async function loadSection(sectionName, targetId) {
+            try {
+                const response = await fetch(`sections/${sectionName}.html`);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${sectionName}`);
+                }
+                const html = await response.text();
+                document.getElementById(targetId).innerHTML = html;
+            } catch (error) {
+                console.error(`Error loading section ${sectionName}:`, error);
+            }
+        }
+
         // 组件加载器
         async function loadComponent(componentName, targetId) {
             try {
@@ -63,6 +91,7 @@
         // 页面加载时自动加载所有模块
         document.addEventListener('DOMContentLoaded', async function() {
             await loadComponent('header', 'header-container');
+            await loadSection('appointment', 'section-appointment');
             await loadComponent('footer', 'footer-container');
         });
     </script>

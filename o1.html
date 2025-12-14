@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O-1 杰出人才工作签证 - 美国信律恒达律师事务所</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 所有背景透明 */
+        .main-content, .main-content > section, .main-content > div {
+            background: transparent !important;
+        }
+        .hero-section, .appointment-form, .page-footer, .footer-info, .footer-content {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        .header, .header-top, .header-nav {
+            background: transparent !important;
+        }
+        /* 所有文字改为深灰色 */
+        h1, h2, h3, h4, h5, h6, p, span, div, label, li, a, strong {
+            color: #333333 !important;
+        }
+        .section-title {
+            color: #333333 !important;
+        }
+
+        /* O-1页面专用样式 */
+        .o1-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 40px 60px;
+        }
+
+        .o1-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .o1-header h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .o1-header .subtitle {
+            font-size: 18px;
+            color: #555 !important;
+            font-style: italic;
+        }
+
+        .o1-intro {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .o1-intro p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .visa-types {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #666;
+            padding: 20px 25px;
+            margin: 20px 0;
+        }
+
+        .visa-types ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .visa-types li {
+            padding: 10px 0;
+            font-size: 16px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .visa-types li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .o1-section {
+            margin-bottom: 50px;
+        }
+
+        .o1-section h2 {
+            font-size: 26px;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .o1-section h3 {
+            font-size: 20px;
+            margin: 25px 0 15px;
+        }
+
+        .o1-section h4 {
+            font-size: 17px;
+            margin: 20px 0 12px;
+            color: #222 !important;
+        }
+
+        .o1-section p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .o1-section ul, .o1-section ol {
+            padding-left: 25px;
+            margin: 15px 0;
+        }
+
+        .o1-section li {
+            line-height: 1.8;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .o1-section li ul {
+            margin-top: 10px;
+        }
+
+        .highlight-box {
+            background: rgba(255, 200, 100, 0.15);
+            border: 1px solid rgba(255, 200, 100, 0.3);
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin: 20px 0;
+        }
+
+        .info-box {
+            background: rgba(100, 150, 255, 0.1);
+            border: 1px solid rgba(100, 150, 255, 0.3);
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin: 20px 0;
+        }
+
+        /* 流程时间线样式 */
+        .process-timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(100, 100, 100, 0.3);
+        }
+
+        .process-step {
+            position: relative;
+            margin-bottom: 35px;
+            padding-left: 25px;
+        }
+
+        .process-step::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: #555;
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,0.8);
+        }
+
+        .process-step h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .process-step p, .process-step ul {
+            font-size: 15px;
+        }
+
+        /* 对比卡片样式 */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+
+        .comparison-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 25px;
+            transition: all 0.3s;
+        }
+
+        .comparison-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .comparison-card h4 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            color: #222 !important;
+        }
+
+        .comparison-card .card-subtitle {
+            font-size: 14px;
+            color: #555 !important;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .comparison-card ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .comparison-card li {
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+
+        /* 适合人群卡片 */
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .audience-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+
+        .audience-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .audience-card h4 {
+            font-size: 17px;
+            margin-bottom: 12px;
+            color: #222 !important;
+        }
+
+        .audience-card ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .audience-card li {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        /* 职责对比表 */
+        .responsibility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 25px 0;
+        }
+
+        .responsibility-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 25px;
+        }
+
+        .responsibility-box h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .responsibility-box ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .responsibility-box li {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* FAQ样式 */
+        .faq-item {
+            margin-bottom: 25px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            padding: 20px 25px;
+        }
+
+        .faq-item h4 {
+            font-size: 17px;
+            margin-bottom: 12px;
+            color: #222 !important;
+        }
+
+        .faq-item p {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* 免责声明样式 */
+        .disclaimer {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 40px;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .disclaimer h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        /* 移动端响应式 */
+        @media (max-width: 768px) {
+            .o1-container {
+                padding: 15px 20px 40px;
+            }
+
+            .o1-header h1 {
+                font-size: 28px;
+            }
+
+            .o1-section h2 {
+                font-size: 22px;
+            }
+
+            .process-timeline {
+                padding-left: 20px;
+            }
+
+            .process-step {
+                padding-left: 15px;
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .responsibility-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body style="background: url('images/new-bg.png') no-repeat center center fixed; background-size: cover;">
+    <!-- 导航栏容器 -->
+    <div id="header-container"></div>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="o1-container">
+            <!-- 页面标题 -->
+            <div class="o1-header">
+                <h1 data-i18n="o1.title">O-1 杰出人才工作签证</h1>
+                <p class="subtitle" data-i18n="o1.subtitle">适合在美长期工作与发展的一类"杰出人才"非移民签证</p>
+            </div>
+
+            <!-- 简介 -->
+            <div class="o1-intro">
+                <p data-i18n="o1.intro1">O-1 是美国针对在科学、教育、商业、艺术、体育等领域具有杰出能力人士设置的一类非移民工作签证。其中主要包括：</p>
+
+                <div class="visa-types">
+                    <ul>
+                        <li><strong>O-1A：</strong><span data-i18n="o1.o1aDesc">科学、教育、商业、体育领域的杰出人才</span></li>
+                        <li><strong>O-1B：</strong><span data-i18n="o1.o1bDesc">艺术、影视、电视领域的杰出人才</span></li>
+                    </ul>
+                </div>
+
+                <p data-i18n="o1.intro2">与 EB-1A 类似，O-1 也要求申请人达到"杰出"水平，但 O-1 是工作签证，用于在美国合法工作和居留；很多客户会将 O-1 作为在美工作 + 后续绿卡（如 EB-1A / NIW） 的整体规划的一部分。</p>
+            </div>
+
+            <!-- 第一部分：适合人群 -->
+            <section class="o1-section">
+                <h2 data-i18n="o1.section1Title">一、适合申请 O-1 的人群</h2>
+                <p data-i18n="o1.section1Intro">O-1 强调的是"在本领域中具有杰出能力并获得持续认可"。典型适合人群包括（不限于）：</p>
+
+                <h3 data-i18n="o1.o1aTitle">O-1A（科学 / 教育 / 商业 / 体育）</h3>
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <h4 data-i18n="o1.audience1Title">科研人员 / 教授 / 医生 / 工程师 / 数据科学家等</h4>
+                        <ul>
+                            <li data-i18n="o1.audience1Item1">有高质量论文、引用、项目成果、专利</li>
+                            <li data-i18n="o1.audience1Item2">在知名机构承担重要角色，参与关键项目</li>
+                        </ul>
+                    </div>
+
+                    <div class="audience-card">
+                        <h4 data-i18n="o1.audience2Title">企业家 / 高管 / 技术负责人</h4>
+                        <ul>
+                            <li data-i18n="o1.audience2Item1">主导或参与的业务在行业内具有影响力</li>
+                            <li data-i18n="o1.audience2Item2">有营收、用户量、市场份额、投融资等客观指标佐证</li>
+                        </ul>
+                    </div>
+
+                    <div class="audience-card">
+                        <h4 data-i18n="o1.audience3Title">体育方面的优秀运动员 / 教练</h4>
+                        <ul>
+                            <li data-i18n="o1.audience3Item1">获奖、代表队经历、专业联赛表现等</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 data-i18n="o1.o1bTitle">O-1B（艺术 / 影视 / 文化）</h3>
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <h4 data-i18n="o1.audience4Title">音乐人 / 演员 / 导演 / 编剧 / 制片人</h4>
+                        <ul>
+                            <li data-i18n="o1.audience4Item1">在大型演出、展览、电影、电视剧、广告、时尚秀中有重要参与</li>
+                        </ul>
+                    </div>
+
+                    <div class="audience-card">
+                        <h4 data-i18n="o1.audience5Title">设计师 / 视觉艺术家 / 摄影师 / 建筑师等</h4>
+                        <ul>
+                            <li data-i18n="o1.audience5Item1">获得奖项、媒体报道、业内好评</li>
+                            <li data-i18n="o1.audience5Item2">作品具有较广传播</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <p data-i18n="o1.assessmentNote">本所在评估时，会考虑：<br>• 你目前在本领域的成绩和认可度<br>• 能否提供足够的证据满足 O-1 标准<br>• 在美国是否有明确、具体的工作安排或项目（O-1 必须有雇主/代理人）</p>
+                </div>
+            </section>
+
+            <!-- 第二部分：基本要求与法律框架 -->
+            <section class="o1-section">
+                <h2 data-i18n="o1.section2Title">二、O-1 的基本要求与法律框架</h2>
+                <p data-i18n="o1.section2Intro">O-1 的核心要点包括：</p>
+
+                <h3 data-i18n="o1.requirement1Title">1. 申请人具备"杰出能力"</h3>
+                <ul>
+                    <li data-i18n="o1.requirement1Item1">一般需通过"重大奖项"或"若干项标准"来证明（类似 EB-1A 的思路）</li>
+                    <li data-i18n="o1.requirement1Item2">例如：重要奖项、媒体报道、专业协会会员、担任评审或重要职务、原创性贡献、发表作品、商业成功等</li>
+                </ul>
+
+                <h3 data-i18n="o1.requirement2Title">2. 有美国雇主或代理人提出申请，并有具体的工作计划</h3>
+                <ul>
+                    <li data-i18n="o1.requirement2Item1">O-1 不是自我申请（self-petition），必须由美国雇主 / 代理人向移民局提交申请</li>
+                    <li data-i18n="o1.requirement2Item2">一般需要提供具体的聘用合同、项目列表、日程安排等</li>
+                </ul>
+
+                <h3 data-i18n="o1.requirement3Title">3. 在申请人所属领域内持续获得认可和成就</h3>
+                <ul>
+                    <li data-i18n="o1.requirement3Item1">不仅看过去的单点成就，还要看整体发展轨迹和业界评价</li>
+                </ul>
+            </section>
+
+            <!-- 第三部分：常见证明方向 -->
+            <section class="o1-section">
+                <h2 data-i18n="o1.section3Title">三、O-1 常见可用的证明方向</h2>
+                <p data-i18n="o1.section3Intro">以下是常见的证据类别（不同领域适用的细节略有差异）：</p>
+
+                <ul>
+                    <li data-i18n="o1.evidence1"><strong>奖项与荣誉：</strong>国家级 / 国际级 / 行业内重要奖项；电影节、音乐奖、设计奖、科研奖等</li>
+                    <li data-i18n="o1.evidence2"><strong>媒体报道与专访：</strong>报纸、杂志、电视、权威网站对本人或作品的报道</li>
+                    <li data-i18n="o1.evidence3"><strong>专业协会会员 / 任职：</strong>有门槛的专业协会会员；在协会中担任理事、委员等职务</li>
+                    <li data-i18n="o1.evidence4"><strong>担任评委 / 评审 / 审稿人：</strong>对他人作品、论文、项目进行评审；电影节评委、比赛评委、期刊审稿人等</li>
+                    <li data-i18n="o1.evidence5"><strong>原创性贡献与项目成就：</strong>技术创新、科研成果、解决行业难题的项目；为企业带来显著商业价值（营收、成本节约、用户增长等）</li>
+                    <li data-i18n="o1.evidence6"><strong>重要作品、演出、展览、项目参与记录（尤其适用于 O-1B）：</strong>参加过的演出、演唱会、展览、影视作品、广告、时装周等；角色或贡献的重要程度（主演、主创、总设计等）</li>
+                    <li data-i18n="o1.evidence7"><strong>高薪酬或高报酬证明：</strong>薪资、片酬、设计费用等明显高于同行平均水平</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p data-i18n="o1.evidenceNote">本所会根据你所在的领域，帮助你选择最合适的证明路径，而不是机械地"凑条款"。</p>
+                </div>
+            </section>
+
+            <!-- 第四部分：申请流程 -->
+            <section class="o1-section">
+                <h2 data-i18n="o1.section4Title">四、本所 O-1 办理流程</h2>
+
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <h3 data-i18n="o1.process1Title">第 1 步：前期评估与整体规划</h3>
+                        <p data-i18n="o1.process1Intro">由本所完成，客户提供基础信息。</p>
+                        <ul>
+                            <li data-i18n="o1.process1Item1">收集资料：中英文简历、教育背景、工作经历、作品 / 项目列表、奖项、媒体报道、专业任职、高薪证明等</li>
+                            <li data-i18n="o1.process1Item2">分析：是否具备满足 O-1 标准的基础；客户在美国的工作计划是否清晰、可行</li>
+                            <li data-i18n="o1.process1Item3">提出建议：是否推荐办理 O-1；与 EB-1A / NIW 等长期移民路径如何衔接；是否需要先补强某些证据</li>
+                        </ul>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="o1.process2Title">第 2 步：签约与时间安排</h3>
+                        <ul>
+                            <li data-i18n="o1.process2Item1">确认律师费与政府费用</li>
+                            <li data-i18n="o1.process2Item2">拟定时间表：材料收集期、文书撰写与修改期、预计递案时间</li>
+                        </ul>
+                        <p data-i18n="o1.process2Note">本所会优先考虑客户当前签证状态、工作安排和入境时间等因素，结合紧急程度做时间规划。</p>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="o1.process3Title">第 3 步：材料清单与证据梳理</h3>
+                        <p data-i18n="o1.process3Intro">由本所出清单，客户按清单准备，本所审核整理。</p>
+                        <h4 data-i18n="o1.process3Type1">1. 基础材料</h4>
+                        <ul>
+                            <li data-i18n="o1.process3Item1">护照、签证、I-94（如已在美）</li>
+                            <li data-i18n="o1.process3Item2">学历学位证及翻译件</li>
+                            <li data-i18n="o1.process3Item3">简历（含详细项目和作品经历）</li>
+                        </ul>
+                        <h4 data-i18n="o1.process3Type2">2. 杰出能力证明材料</h4>
+                        <ul>
+                            <li data-i18n="o1.process3Item4">各项奖项证书及评选说明</li>
+                            <li data-i18n="o1.process3Item5">媒体报道扫描件及链接</li>
+                            <li data-i18n="o1.process3Item6">重要项目、作品、演出、展览的证明</li>
+                            <li data-i18n="o1.process3Item7">专业协会会员证明、任职文件</li>
+                            <li data-i18n="o1.process3Item8">评审、审稿、评委的邀请信和证明</li>
+                            <li data-i18n="o1.process3Item9">高薪报酬的合同、工资单、税单等</li>
+                        </ul>
+                        <h4 data-i18n="o1.process3Type3">3. 美国工作安排材料</h4>
+                        <ul>
+                            <li data-i18n="o1.process3Item10">与美国雇主/代理人的合同或意向书</li>
+                            <li data-i18n="o1.process3Item11">项目列表、演出或拍摄计划、工作计划表（itinerary）</li>
+                            <li data-i18n="o1.process3Item12">雇主/代理人介绍、公司背景材料等</li>
+                        </ul>
+                        <div class="highlight-box">
+                            <p data-i18n="o1.process3Note">O-1 与 EB-1A 不同的一大特点是"必须有具体工作安排"，本所会协助雇主或代理人准备符合移民局要求的说明文件。</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="o1.process4Title">第 4 步：推荐信策略与起草</h3>
+                        <p data-i18n="o1.process4Intro">虽然 O-1 不一定强制要求推荐信，但在实际操作中，高质量推荐信往往能强化案件。</p>
+                        <p data-i18n="o1.process4Desc">本所将：</p>
+                        <ul>
+                            <li data-i18n="o1.process4Item1">选择合适的推荐人类型：行业内知名人士、导演、制片人、主办方、老板、教授等</li>
+                            <li data-i18n="o1.process4Item2">为不同推荐人设计不同角度：专业能力与贡献、行业影响力和知名度、在美国工作计划与合作的重要性</li>
+                            <li data-i18n="o1.process4Item3">起草英文推荐信初稿，并根据推荐人反馈调整，确保：内容有具体事实和细节支撑；与证据和工作安排相互印证</li>
+                        </ul>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="o1.process5Title">第 5 步：为雇主/代理人准备支持文件</h3>
+                        <p data-i18n="o1.process5Intro">由于 O-1 必须由美国雇主/代理人出面申请，本所会：</p>
+                        <ul>
+                            <li data-i18n="o1.process5Item1">指导雇主/代理人准备：工作邀请函 / 雇佣合同（说明职位、职责、薪酬、工作期限等）、详细工作计划 / 项目列表（特别适用于艺术家、演员、音乐人等）、公司/机构介绍（公司业务、规模、行业地位等）</li>
+                            <li data-i18n="o1.process5Item2">如有需要，协助撰写：美国雇主/代理人支持声明、对申请人角色重要性的说明等</li>
+                        </ul>
+                        <p data-i18n="o1.process5Note">对于项目制工作（例如巡演、拍摄、多个演出场地），我们会帮你把分散的信息整理成一个清晰的日程及项目表，便于审理官理解。</p>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="o1.process6Title">第 6 步：律师意见书（Petition Letter）与 I-129 申请</h3>
+                        <p data-i18n="o1.process6Intro">这是整个 O-1 案件的核心文书工作，由本所负责。</p>
+                        <ul>
+                            <li data-i18n="o1.process6Item1">使用 I-129 表格，由美国雇主/代理人作为申请人递交</li>
+                            <li data-i18n="o1.process6Item2">律师意见书中会：概述申请人的专业背景、领域定位；逐项说明申请人如何满足 O-1 的法律标准；解释美国工作安排的重要性和合理性；分类引用附录中的证据材料（Exhibits）</li>
+                        </ul>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="o1.process7Title">第 7 步：递交与加急处理（Premium Processing）</h3>
+                        <p data-i18n="o1.process7Intro">由本所统一操作。</p>
+                        <ul>
+                            <li data-i18n="o1.process7Item1">准备完整的 I-129 申请包（含律师意见书、证据、表格等）</li>
+                            <li data-i18n="o1.process7Item2">如客户选择加急处理（在政策允许范围内）：同时递交 Premium Processing 申请，获得更快的处理结果</li>
+                            <li data-i18n="o1.process7Item3">递交后：通知客户及雇主收据号码；说明下一步：获批后在境外如何预约面签、在境内如何变更或延长身份等</li>
+                        </ul>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="o1.process8Title">第 8 步：获批后安排入境 / 身份转换与延期</h3>
+                        <ul>
+                            <li data-i18n="o1.process8Abroad"><strong>人在境外：</strong>携获批通知前往美国使领馆申请 O-1 签证；办理签证面谈、准备面签资料、入境安排</li>
+                            <li data-i18n="o1.process8US"><strong>人在美国境内：</strong>如以身份转换方式获批，则在获批后按批准时间内在美工作；后续如需延期（Extension），本所可协助准备延期申请材料</li>
+                            <li data-i18n="o1.process8LongTerm"><strong>长期规划：</strong>对于有长期在美发展意向的客户，本所会同步规划后续可能的 EB-1A、NIW 或其他职业移民路径，做到工作签证与绿卡策略一体化设计。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第五部分：职责分工 -->
+            <section class="o1-section">
+                <h2 data-i18n="o1.section5Title">五、客户与本所的分工</h2>
+
+                <div class="responsibility-grid">
+                    <div class="responsibility-box">
+                        <h4 data-i18n="o1.clientRespTitle">客户主要需要做的</h4>
+                        <ul>
+                            <li data-i18n="o1.clientResp1">提供完整、真实的背景信息和证据材料</li>
+                            <li data-i18n="o1.clientResp2">配合联系推荐人、雇主/代理人</li>
+                            <li data-i18n="o1.clientResp3">按时反馈文书修改意见</li>
+                            <li data-i18n="o1.clientResp4">准备签证面谈时需要的个人材料</li>
+                        </ul>
+                    </div>
+
+                    <div class="responsibility-box">
+                        <h4 data-i18n="o1.firmRespTitle">本所主要负责的</h4>
+                        <ul>
+                            <li data-i18n="o1.firmResp1">可行性评估与整体策略设计</li>
+                            <li data-i18n="o1.firmResp2">制定材料清单并审核、整理所有证据</li>
+                            <li data-i18n="o1.firmResp3">起草推荐信草稿、雇主支持文件草稿、律师意见书</li>
+                            <li data-i18n="o1.firmResp4">准备并递交 I-129 + 支持材料，并进行后续跟进</li>
+                            <li data-i18n="o1.firmResp5">如有 RFE（补件）或其他问题，提供应对方案</li>
+                            <li data-i18n="o1.firmResp6">结合客户长期规划，设计 O-1 与移民路径的衔接方案</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第六部分：时间线 -->
+            <section class="o1-section">
+                <h2 data-i18n="o1.section6Title">六、时间线示例</h2>
+                <p data-i18n="o1.timelineIntro">以下为一般经验，实际情况视客户配合速度、案件复杂度和移民局审理速度而定。</p>
+                <ul>
+                    <li data-i18n="o1.timeline1">材料收集与整理：约 3–6 周</li>
+                    <li data-i18n="o1.timeline2">文书撰写与定稿：约 3–6 周</li>
+                    <li data-i18n="o1.timeline3">I-129 递交后：如使用加急处理，在官方规定的加急时限内获得结果或 RFE；如不加急，审理时间可能为数周至数月不等</li>
+                </ul>
+                <p data-i18n="o1.timelineNote">本所会结合你当前签证状况和入职时间要求，尽量在时间安排上为你预留空间。</p>
+            </section>
+
+            <!-- 第七部分：FAQ -->
+            <section class="o1-section">
+                <h2 data-i18n="o1.section7Title">七、常见问题（FAQ）</h2>
+
+                <div class="faq-item">
+                    <h4 data-i18n="o1.faq1Q">1. O-1 是不是只有"世界顶级明星"才可以申请？</h4>
+                    <p data-i18n="o1.faq1A">不是。虽然 O-1 要求"杰出"，但法律并没有规定必须是"世界第一"。关键是：是否有客观证据证明你在本领域明显高于一般专业人士；是否有具体的美国工作安排；是否能通过系统的材料和法律论证，让审理官相信你确实属于"杰出人才"范畴。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-i18n="o1.faq2Q">2. O-1 是不是可以自己申请，不需要雇主？</h4>
+                    <p data-i18n="o1.faq2A">O-1 与 EB-1A 不同，O-1 必须有美国雇主或代理人作为申请人。但在某些艺术或项目型领域，可以通过"美国代理人（Agent）"的形式来整合多个项目，由本所协助设计合理的结构。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-i18n="o1.faq3Q">3. O-1 可以带家属吗？</h4>
+                    <p data-i18n="o1.faq3A">可以。配偶和 21 岁以下未婚子女通常可以申请 O-3 附属签证，与主申请人一同入境或团聚。O-3 不允许在美国工作，但通常可以上学。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-i18n="o1.faq4Q">4. O-1 和 H-1B 相比有什么优势？</h4>
+                    <p data-i18n="o1.faq4A">简单对比：O-1 没有 H-1B 那样的"抽签名额限制"；O-1 对申请人个人能力要求更高，但在名额和灵活性上更有优势；对于在本领域已经有较强成就的人士，O-1 往往是更匹配的选择。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-i18n="o1.faq5Q">5. O-1 可以为将来申请绿卡加分吗？</h4>
+                    <p data-i18n="o1.faq5A">本身 O-1 是非移民工作签证，不直接等于绿卡。但：O-1 过程中准备和使用的证据，与 EB-1A、NIW 等绿卡类别高度相关；很多客户会在 O-1 身份期间，同时或随后启动 EB-1A / NIW，以实现从"在美工作"到"长期移民"的过渡。本所可以为你设计 O-1 + EB-1A / NIW 的整体路径，尽量减少重复工作和时间浪费。</p>
+                </div>
+            </section>
+
+            <!-- 免责声明 -->
+            <div class="disclaimer">
+                <h3 data-i18n="o1.disclaimerTitle">重要声明</h3>
+                <ul>
+                    <li data-i18n="o1.disclaimer1">本页面内容仅为 O-1 签证的一般性介绍，不构成对任何具体案件的法律意见。</li>
+                    <li data-i18n="o1.disclaimer2">美国移民政策、费用和审理时间会随时间调整，一切以美国移民局（USCIS）及相关官方渠道的最新信息为准。</li>
+                    <li data-i18n="o1.disclaimer3">如需针对你个人背景和具体工作机会进行详细评估，欢迎与本所预约一对一法律咨询。</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/navigation.js"></script>
+    <script>
+        // 组件加载器
+        async function loadComponent(componentName, targetId) {
+            try {
+                const response = await fetch(`components/${componentName}.html`);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${componentName}`);
+                }
+                const html = await response.text();
+                document.getElementById(targetId).innerHTML = html;
+            } catch (error) {
+                console.error(`Error loading component ${componentName}:`, error);
+            }
+        }
+
+        // 页面加载时自动加载组件
+        document.addEventListener('DOMContentLoaded', async function() {
+            await loadComponent('header', 'header-container');
+        });
+    </script>
+</body>
+</html>

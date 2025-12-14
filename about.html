@@ -55,68 +55,8 @@
                     <p data-i18n="about.paragraph2" style="margin-bottom: 25px;">
                         本所律师持有纽约州与新泽西州律师执业资格，并具备在纽约南区联邦地区法院（S.D.N.Y.）、纽约东区联邦地区法院（E.D.N.Y.）、伊利诺伊州北区联邦地区法院（N.D. Ill.）及伊利诺伊州南区联邦地区法院（S.D. Ill.）的出庭资格。
                     </p>
-
-                    <p data-i18n="about.paragraph3">
-                    </p>
                 </div>
-
-                <!-- 核心价值观 -->
-                <div class="core-values" style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 50px; flex-wrap: wrap;">
-                    <div class="value-line" style="width: 50px; height: 2px; background: #ffffff; flex-shrink: 0;"></div>
-                    <h3 class="value1-item" style="font-size: 28px; color: #ffffff !important; margin: 0;" data-i18n="about.value1">专业</h3>
-                    <div class="value1-circle value-circle" style="width: 8px; height: 8px; background: #ffffff; border-radius: 50%; flex-shrink: 0;"></div>
-                    <h3 style="font-size: 28px; color: #ffffff !important; margin: 0;" data-i18n="about.value2">专注</h3>
-                    <div class="value-circle" style="width: 8px; height: 8px; background: #ffffff; border-radius: 50%; flex-shrink: 0;"></div>
-                    <h3 style="font-size: 28px; color: #ffffff !important; margin: 0;" data-i18n="about.value3">高效</h3>
-                    <div class="value-circle" style="width: 8px; height: 8px; background: #ffffff; border-radius: 50%; flex-shrink: 0;"></div>
-                    <h3 style="font-size: 28px; color: #ffffff !important; margin: 0;" data-i18n="about.value4">信赖</h3>
-                    <div class="value-line" style="width: 50px; height: 2px; background: #ffffff; flex-shrink: 0;"></div>
-                </div>
-
-                <script>
-                    // 监听语言切换事件，控制value1的显示/隐藏
-                    document.addEventListener('languageChanged', function(e) {
-                        const isEnglish = e.detail.lang === 'en';
-                        const value1Items = document.querySelectorAll('.value1-item, .value1-circle');
-                        value1Items.forEach(item => {
-                            item.style.display = isEnglish ? 'none' : '';
-                        });
-                    });
-
-                    // 页面加载时立即检查语言
-                    if (typeof getCurrentLang === 'function' && getCurrentLang() === 'en') {
-                        document.querySelectorAll('.value1-item, .value1-circle').forEach(item => {
-                            item.style.display = 'none';
-                        });
-                    }
-                </script>
-
-                <style>
-                    @media (max-width: 768px) {
-                        .core-values {
-                            gap: 8px !important;
-                        }
-                        .core-values h3 {
-                            font-size: 16px !important;
-                        }
-                        .value-line {
-                            width: 20px !important;
-                        }
-                        .value-circle {
-                            width: 5px !important;
-                            height: 5px !important;
-                        }
-                    }
-                </style>
             </div>
-        </section>
-
-        <!-- 案件咨询区域 -->
-        <div id="section-appointment"></div>
-
-        <!-- 联系方式区域（不含地图） -->
-        <section id="contact">
-            <div id="footer-container" class="no-map"></div>
         </section>
     </main>
 
@@ -157,8 +97,6 @@
         // 页面加载时自动加载所有模块
         document.addEventListener('DOMContentLoaded', async function() {
             await loadComponent('header', 'header-container');
-            await loadSection('appointment', 'section-appointment');
-            await loadComponent('footer', 'footer-container');
         });
     </script>
 </body>

@@ -43,11 +43,6 @@
     <!-- 主要内容 -->
     <main class="main-content">
         <div id="section-appointment"></div>
-
-        <!-- 联系方式区域（不含地图） -->
-        <section id="contact">
-            <div id="footer-container" class="no-map"></div>
-        </section>
     </main>
 
     <script src="js/config.js"></script>
@@ -88,7 +83,6 @@
         document.addEventListener('DOMContentLoaded', async function() {
             await loadComponent('header', 'header-container');
             await loadSection('appointment', 'section-appointment');
-            await loadComponent('footer', 'footer-container');
         });
     </script>
 </body>
