@@ -76,15 +76,15 @@ const translations = {
             requirement3: '工作认真、细心、有责任感',
             requirement4: '有律所或相关经验',
             workArrangement: '工作安排：',
-            location: '工作地点：纽约法拉盛',
+            location: '工作地点：纽约曼哈顿',
             applicationMethod: '申请方式：',
-            applicationInfo: '请将简历发送至：catherine.lyu@lyulawpllc.com',
+            applicationInfo: '请将简历发送至：info@hengdalawfirm.com',
             emailSubject: '邮件标题注明："Law Clerk – 姓名"'
         }
     },
     en: {
         header: {
-            firmName: 'The Law Office of X.Lyu,PLLC'
+            firmName: 'Heng Da Law Firm'
         },
         nav: {
             about: 'About Us',
@@ -95,8 +95,8 @@ const translations = {
         },
         about: {
             title: 'About Us',
-            firmName: 'The Law Office of X.Lyu, PLLC',
-            paragraph1: 'The Law Office of X. Lyu, PLLC is a bilingual Chinese-English law firm dedicated to serving individuals, families, and businesses in the United States. Our attorneys are graduates of leading U.S. law schools, hold Juris Doctor degrees, and have extensive experience across government, courts, top international law firms, and major corporations.',
+            firmName: 'Heng Da Law Firm',
+            paragraph1: 'Heng Da Law Firm is a bilingual Chinese-English law firm dedicated to serving individuals, families, and businesses in the United States. Our attorneys are graduates of leading U.S. law schools, hold Juris Doctor degrees, and have extensive experience across government, courts, top international law firms, and major corporations.',
             paragraph2: 'We provide legal services in civil litigation, family law, criminal defense, immigration law, real estate transactions and disputes, business and commercial law, personal injury, and intellectual property.',
             paragraph3: 'We believe in precise strategy, exceptional service, and uncompromised professionalism. With a rigorous legal team and strong problem-solving capabilities, we deliver comprehensive and high-quality legal solutions—protecting our clients\' rights and earning their trust with every case.',
             value1: '',
@@ -133,7 +133,7 @@ const translations = {
             title: 'Contact Us',
             availability: '24/7',
             subtitle: 'If you require any legal assistance, please do not hesitate to contact us.',
-            firmName: 'The Law Office of X.Lyu,PLLC',
+            firmName: 'Heng Da Law Firm',
             phone: 'Phone',
             address: 'Address',
             email: 'Email',
@@ -158,9 +158,9 @@ const translations = {
             requirement3: 'Detail-oriented, responsible, and organized',
             requirement4: 'Prior law firm or relevant experience preferred',
             workArrangement: 'Work Arrangement:',
-            location: 'Location: Flushing, New York',
+            location: 'Location: Manhattan, New York',
             applicationMethod: 'How to Apply:',
-            applicationInfo: 'Please send your resume to catherine.lyu@lyulawpllc.com',
+            applicationInfo: 'Please send your resume to info@hengdalawfirm.com',
             emailSubject: 'Email subject line: "Law Clerk – [Your Name]"'
         }
     }

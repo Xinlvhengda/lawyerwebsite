@@ -19,14 +19,14 @@ const CONTACT_CONFIG = {
 
     // 正式联系信息（律师真实信息）
     production: {
-        lawyerName: '吕昕橦',
-        phone1: '(212)812-8253',
-        phone2: '(347)966-1978',
-        email: 'catherine.lyu@lyulawpllc.com',
-        wechat: 'lyulaw',
-        address: '36-36 Prince St., #309A',
-        addressDetail: 'Flushing, NY 11354',
-        officeHours: '周一至周六 9:00 AM - 5:30 PM<br>周日 （仅限预约）'
+        lawyerName: 'Heng Da Law Firm',
+        phone1: '(718)878-4494',
+        phone2: '',
+        email: 'info@hengdalawfirm.com',
+        wechat: '',
+        address: '99 Wall Street #1810',
+        addressDetail: 'New York, NY 10005',
+        officeHours: '周一至周五 9:00 AM - 6:00 PM'
     }
 };
 
