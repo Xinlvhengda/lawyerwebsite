@@ -2,7 +2,7 @@
 const translations = {
     zh: {
         header: {
-            firmName: '美国信律恒达律师事务所'
+            firmName: '恒达律师事务所'
         },
         nav: {
             about: '关于我们',
@@ -61,7 +61,7 @@ const translations = {
             title: '联系我们',
             availability: '24/7',
             subtitle: '如果您有任何法律需求，请随时与我们联系',
-            firmName: '美国信律恒达律师事务所',
+            firmName: '恒达律师事务所',
             phone: '电话',
             address: '地址',
             email: '邮箱',
