@@ -1426,9 +1426,18 @@ function updatePageLanguage() {
     document.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang: currentLang } }));
 }
 
+// 页面加载前先隐藏内容，防止语言切换闪烁
+document.documentElement.style.opacity = '0';
+
 // 页面加载时初始化语言
 document.addEventListener('DOMContentLoaded', function() {
     updatePageLanguage();
+
+    // 语言更新完成后显示页面
+    setTimeout(function() {
+        document.documentElement.style.transition = 'opacity 0.15s ease-in';
+        document.documentElement.style.opacity = '1';
+    }, 50);
 
     // 监听DOM变化，当新内容加载时自动应用语言
     let updateTimeout;
