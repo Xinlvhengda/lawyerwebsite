@@ -71,6 +71,35 @@ const translations = {
             wechatQRCode: '微信二维码',
             mapTitle: '办公地点'
         },
+        immigration: {
+            title: '移民服务',
+            learnMore: '了解详情 →',
+            eb1a: {
+                title: 'EB-1A 杰出人才移民',
+                subtitle: '无需雇主担保，以个人成就直通美国职业移民第一优先。',
+                intro: '恒达律师事务所专注办理各类杰出人才移民案件，为科研人员、企业家、艺术家、医生、工程师等高端专业人士提供定制化 EB-1A 解决方案。我们从移民法标准出发，系统梳理您的论文、项目、专利、奖项、媒体报道和行业影响力，设计最有说服力的申请路径。通过严谨的证据规划和律师意见书，我们协助您以个人成就为基础，自主申请美国绿卡。'
+            },
+            niw: {
+                title: 'NIW 国家利益豁免',
+                subtitle: '以工作价值打动美国国家利益，无需雇主与劳工证。',
+                intro: '恒达律师事务所为科研人员、医生、工程师、数据科学家、教育与公共政策领域专业人士提供 NIW 国家利益豁免法律服务。我们聚焦三个核心要素：您拟在美国从事的工作是否具有国家重要性、您是否有能力推动该工作、是否应当豁免雇主担保与劳工证程序。通过深入挖掘您的研究方向、项目成果和未来规划，我们帮助您从"国家利益"的角度构建有说服力的移民申请。'
+            },
+            o1: {
+                title: 'O-1 杰出人才工作签证',
+                subtitle: '为在美工作与发展提供灵活机动的杰出人才签证方案。',
+                intro: '恒达律师事务所为科研、商业、体育、艺术、影视等领域的高端人才提供 O-1 工作签证全程服务。我们不仅协助梳理您的奖项、媒体报道、重要项目和行业认可度，还会为美国雇主或代理人设计合规的聘用架构和工作计划。无论您是计划首次赴美工作，还是从现有身份转换为 O-1，我们都可以将 O-1 与日后 EB-1A、NIW 等长期移民路径进行一体化规划。'
+            },
+            l1: {
+                title: 'L-1 跨国公司高管 / 专业人才签证',
+                subtitle: '为跨国企业搭建中国团队与美国团队之间的合规桥梁。',
+                intro: '恒达律师事务所为跨国企业及其高管、核心技术人员提供 L-1A / L-1B 签证规划与办理服务。我们从企业和个人双重维度入手，核查关联公司结构、业务运营、岗位职责及未来在美发展计划，搭建符合移民局要求的"跨国调派"路径。对于计划在美国设立新办公室或考虑未来通过 EB-1C 申请绿卡的企业，我们可以提前整体设计 L-1 与后续移民的衔接方案。'
+            },
+            eb5: {
+                title: 'EB-5 投资移民',
+                subtitle: '在合规与风险控制基础上，通过投资为家庭规划美国未来。',
+                intro: '恒达律师事务所为高净值家庭和企业家提供 EB-5 投资移民法律服务，重点关注移民合规、资金合法来源与项目结构的稳健性。我们从法律角度协助您理解直投与区域中心项目、TEA / 农村预留名额等关键信息，并为您设计资金来源与路径证明方案，撰写 I-526 / I-526E 及后续 I-829 解除条件申请。我们不代替金融顾问做投资推荐，但会尽最大努力在法律框架内保护您的移民权益。'
+            }
+        },
         joinus: {
             title: '加入我们',
             positions: '招聘职位：Law Clerk（法律助理）',
@@ -718,6 +747,35 @@ const translations = {
             officeHoursContent: 'Monday - Friday: 9:00 AM - 5:30 PM<br>Saturday & Sunday: By Appointment Only',
             wechatQRCode: 'WeChat QR Code',
             mapTitle: 'Office Location'
+        },
+        immigration: {
+            title: 'Immigration Services',
+            learnMore: 'Learn More →',
+            eb1a: {
+                title: 'EB-1A Extraordinary Ability',
+                subtitle: 'No employer sponsorship required—pursue first-preference permanent residence based on individual achievement.',
+                intro: 'Hengda Law Firm represents high-achieving professionals in EB-1A extraordinary ability matters, including researchers, entrepreneurs, artists, physicians, and engineers. We evaluate each case under the governing immigration standards and build a persuasive evidentiary record by organizing publications, projects, patents, awards, media coverage, and industry influence into a cohesive petition strategy. Through rigorous evidence planning and a carefully structured legal brief, we help clients pursue U.S. permanent residence through self-petition based on demonstrated individual accomplishment.'
+            },
+            niw: {
+                title: 'NIW National Interest Waiver',
+                subtitle: 'Advance a nationally important endeavor—without a job offer or PERM labor certification.',
+                intro: 'Hengda Law Firm provides NIW legal services to researchers, physicians, engineers, data scientists, and professionals in education and public policy. Our approach is structured around the three core NIW considerations: whether the proposed endeavor has substantial merit and national importance, whether the applicant is well positioned to advance the endeavor, and whether—on balance—it benefits the United States to waive the job-offer and labor certification requirements. By closely analyzing your work, measurable outcomes, and U.S.-based plans, we craft an NIW petition that presents your profile through a national-interest framework supported by credible documentation.'
+            },
+            o1: {
+                title: 'O-1 Extraordinary Ability Visa',
+                subtitle: 'A flexible, high-caliber visa strategy for sustained work and professional development in the United States.',
+                intro: 'Hengda Law Firm represents distinguished professionals in O-1 visa matters across science, business, athletics, the arts, and film/television. We develop the evidentiary record demonstrating sustained acclaim—such as awards, major projects, press coverage, and peer recognition—and we also assist U.S. employers or agents in structuring compliant petition arrangements and credible work itineraries. Whether you are applying from abroad or changing status within the United States, we can integrate O-1 planning with longer-term permanent residence strategies, including EB-1A and NIW, to ensure continuity and reduce duplication.'
+            },
+            l1: {
+                title: 'L-1 Intracompany Transferee Visa',
+                subtitle: 'A compliant bridge between global operations and U.S. expansion for multinational companies and key personnel.',
+                intro: 'Hengda Law Firm advises multinational companies and their executives, managers, and specialized knowledge employees on L-1A and L-1B strategy and petition preparation. We assess eligibility from both the company and employee perspectives, including corporate affiliation, operational reality, position duties, and U.S. growth plans, and we develop a documentation framework consistent with USCIS expectations for intracompany transfers. For companies establishing a new U.S. office or planning a longer-term pathway through EB-1C, we design L-1 filings with future immigration alignment in mind from the outset.'
+            },
+            eb5: {
+                title: 'EB-5 Immigrant Investor Program',
+                subtitle: 'Plan your family\'s U.S. future through investment—grounded in compliance and disciplined risk management.',
+                intro: 'Hengda Law Firm provides EB-5 legal representation for high-net-worth families and entrepreneurs, with a focus on immigration compliance, lawful source-of-funds documentation, and the integrity of petition structure. We advise clients on key legal distinctions—such as direct versus regional center investments and TEA/rural set-aside considerations—and we design a source-and-path-of-funds strategy supported by traceable documentation. We prepare and file Forms I-526/I-526E and guide clients through subsequent stages, including Form I-829 removal of conditions. While we do not provide investment or securities recommendations, we work diligently within the legal framework to protect the client\'s immigration interests throughout the EB-5 process.'
+            }
         },
         joinus: {
             title: 'Join Us',

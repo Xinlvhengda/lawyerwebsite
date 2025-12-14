@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移民服务 - 美国信律恒达律师事务所</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 所有背景透明 */
+        .main-content, .main-content > section, .main-content > div {
+            background: transparent !important;
+        }
+        .header, .header-top, .header-nav {
+            background: transparent !important;
+        }
+        /* 所有文字改为深灰色 */
+        h1, h2, h3, h4, h5, h6, p, span, div, label, li, a, strong {
+            color: #333333 !important;
+        }
+        .section-title {
+            color: #333333 !important;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 60px;
+        }
+
+        /* 移民服务卡片容器 */
+        .immigration-services {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 40px;
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .service-card h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #2c2c2c !important;
+        }
+
+        .service-card .subtitle {
+            font-size: 18px;
+            font-style: italic;
+            color: #555 !important;
+            margin-bottom: 20px;
+        }
+
+        .service-card .intro {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333 !important;
+            margin-bottom: 20px;
+        }
+
+        .service-card .learn-more {
+            display: inline-block;
+            padding: 12px 30px;
+            background: rgba(255, 255, 255, 0.3);
+            color: #333 !important;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .service-card .learn-more:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(5px);
+        }
+
+        /* 移动端响应式 */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 28px;
+                margin-bottom: 40px;
+            }
+
+            .service-card {
+                padding: 25px;
+                margin-bottom: 30px;
+            }
+
+            .service-card h2 {
+                font-size: 22px;
+            }
+
+            .service-card .subtitle {
+                font-size: 16px;
+            }
+
+            .service-card .intro {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body style="background: url('images/new-bg.png') no-repeat center center fixed; background-size: cover;">
+    <!-- 导航栏容器 -->
+    <div id="header-container"></div>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <h1 class="section-title" data-i18n="immigration.title">移民服务</h1>
+
+        <div class="immigration-services">
+            <!-- EB-1A -->
+            <div class="service-card">
+                <h2 data-i18n="immigration.eb1a.title">EB-1A 杰出人才移民</h2>
+                <p class="subtitle" data-i18n="immigration.eb1a.subtitle">无需雇主担保，以个人成就直通美国职业移民第一优先。</p>
+                <p class="intro" data-i18n="immigration.eb1a.intro">恒达律师事务所专注办理各类杰出人才移民案件，为科研人员、企业家、艺术家、医生、工程师等高端专业人士提供定制化 EB-1A 解决方案。我们从移民法标准出发，系统梳理您的论文、项目、专利、奖项、媒体报道和行业影响力，设计最有说服力的申请路径。通过严谨的证据规划和律师意见书，我们协助您以个人成就为基础，自主申请美国绿卡。</p>
+                <a href="eb1a.html" class="learn-more" data-i18n="immigration.learnMore">了解详情 →</a>
+            </div>
+
+            <!-- NIW -->
+            <div class="service-card">
+                <h2 data-i18n="immigration.niw.title">NIW 国家利益豁免</h2>
+                <p class="subtitle" data-i18n="immigration.niw.subtitle">以工作价值打动美国国家利益，无需雇主与劳工证。</p>
+                <p class="intro" data-i18n="immigration.niw.intro">恒达律师事务所为科研人员、医生、工程师、数据科学家、教育与公共政策领域专业人士提供 NIW 国家利益豁免法律服务。我们聚焦三个核心要素：您拟在美国从事的工作是否具有国家重要性、您是否有能力推动该工作、是否应当豁免雇主担保与劳工证程序。通过深入挖掘您的研究方向、项目成果和未来规划，我们帮助您从"国家利益"的角度构建有说服力的移民申请。</p>
+                <a href="niw.html" class="learn-more" data-i18n="immigration.learnMore">了解详情 →</a>
+            </div>
+
+            <!-- O-1 -->
+            <div class="service-card">
+                <h2 data-i18n="immigration.o1.title">O-1 杰出人才工作签证</h2>
+                <p class="subtitle" data-i18n="immigration.o1.subtitle">为在美工作与发展提供灵活机动的杰出人才签证方案。</p>
+                <p class="intro" data-i18n="immigration.o1.intro">恒达律师事务所为科研、商业、体育、艺术、影视等领域的高端人才提供 O-1 工作签证全程服务。我们不仅协助梳理您的奖项、媒体报道、重要项目和行业认可度，还会为美国雇主或代理人设计合规的聘用架构和工作计划。无论您是计划首次赴美工作，还是从现有身份转换为 O-1，我们都可以将 O-1 与日后 EB-1A、NIW 等长期移民路径进行一体化规划。</p>
+                <a href="o1.html" class="learn-more" data-i18n="immigration.learnMore">了解详情 →</a>
+            </div>
+
+            <!-- L-1 -->
+            <div class="service-card">
+                <h2 data-i18n="immigration.l1.title">L-1 跨国公司高管 / 专业人才签证</h2>
+                <p class="subtitle" data-i18n="immigration.l1.subtitle">为跨国企业搭建中国团队与美国团队之间的合规桥梁。</p>
+                <p class="intro" data-i18n="immigration.l1.intro">恒达律师事务所为跨国企业及其高管、核心技术人员提供 L-1A / L-1B 签证规划与办理服务。我们从企业和个人双重维度入手，核查关联公司结构、业务运营、岗位职责及未来在美发展计划，搭建符合移民局要求的"跨国调派"路径。对于计划在美国设立新办公室或考虑未来通过 EB-1C 申请绿卡的企业，我们可以提前整体设计 L-1 与后续移民的衔接方案。</p>
+                <a href="l1.html" class="learn-more" data-i18n="immigration.learnMore">了解详情 →</a>
+            </div>
+
+            <!-- EB-5 -->
+            <div class="service-card">
+                <h2 data-i18n="immigration.eb5.title">EB-5 投资移民</h2>
+                <p class="subtitle" data-i18n="immigration.eb5.subtitle">在合规与风险控制基础上，通过投资为家庭规划美国未来。</p>
+                <p class="intro" data-i18n="immigration.eb5.intro">恒达律师事务所为高净值家庭和企业家提供 EB-5 投资移民法律服务，重点关注移民合规、资金合法来源与项目结构的稳健性。我们从法律角度协助您理解直投与区域中心项目、TEA / 农村预留名额等关键信息，并为您设计资金来源与路径证明方案，撰写 I-526 / I-526E 及后续 I-829 解除条件申请。我们不代替金融顾问做投资推荐，但会尽最大努力在法律框架内保护您的移民权益。</p>
+                <a href="eb5.html" class="learn-more" data-i18n="immigration.learnMore">了解详情 →</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/navigation.js"></script>
+    <script>
+        // 组件加载器
+        async function loadComponent(componentName, targetId) {
+            try {
+                const response = await fetch(`components/${componentName}.html`);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${componentName}`);
+                }
+                const html = await response.text();
+                document.getElementById(targetId).innerHTML = html;
+            } catch (error) {
+                console.error(`Error loading component ${componentName}:`, error);
+            }
+        }
+
+        // 页面加载时自动加载所有模块
+        document.addEventListener('DOMContentLoaded', async function() {
+            await loadComponent('header', 'header-container');
+        });
+    </script>
+</body>
+</html>
