@@ -104,9 +104,19 @@
                 font-size: 15px;
             }
         }
+
+        /* 防止语言切换闪烁 */
+        body.loading-lang {
+            opacity: 0;
+            transition: opacity 0.15s ease-in;
+        }
+
+        body.lang-loaded {
+            opacity: 1;
+        }
     </style>
 </head>
-<body style="background: url('images/new-bg.png') no-repeat center center fixed; background-size: cover;">
+<body class="loading-lang" style="background: url('images/new-bg.png') no-repeat center center fixed; background-size: cover;">
     <!-- 导航栏容器 -->
     <div id="header-container"></div>
 
@@ -178,6 +188,12 @@
         // 页面加载时自动加载所有模块
         document.addEventListener('DOMContentLoaded', async function() {
             await loadComponent('header', 'header-container');
+
+            // 语言加载完成后显示页面
+            setTimeout(() => {
+                document.body.classList.remove('loading-lang');
+                document.body.classList.add('lang-loaded');
+            }, 50);
         });
     </script>
 </body>
