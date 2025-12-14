@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L-1 跨国公司经理/专业人才签证 - 美国信律恒达律师事务所</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 所有背景透明 */
+        .main-content, .main-content > section, .main-content > div {
+            background: transparent !important;
+        }
+        .hero-section, .appointment-form, .page-footer, .footer-info, .footer-content {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        .header, .header-top, .header-nav {
+            background: transparent !important;
+        }
+        /* 所有文字改为深灰色 */
+        h1, h2, h3, h4, h5, h6, p, span, div, label, li, a, strong {
+            color: #333333 !important;
+        }
+        .section-title {
+            color: #333333 !important;
+        }
+
+        /* L-1页面专用样式 */
+        .l1-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 40px 60px;
+        }
+
+        .l1-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .l1-header h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .l1-header .subtitle {
+            font-size: 18px;
+            color: #555 !important;
+            font-style: italic;
+        }
+
+        .l1-intro {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .l1-intro p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .visa-types {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #666;
+            padding: 20px 25px;
+            margin: 20px 0;
+        }
+
+        .visa-types ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .visa-types li {
+            padding: 10px 0;
+            font-size: 16px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .visa-types li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .l1-section {
+            margin-bottom: 50px;
+        }
+
+        .l1-section h2 {
+            font-size: 26px;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .l1-section h3 {
+            font-size: 20px;
+            margin: 25px 0 15px;
+        }
+
+        .l1-section h4 {
+            font-size: 17px;
+            margin: 20px 0 12px;
+            color: #222 !important;
+        }
+
+        .l1-section p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .l1-section ul, .l1-section ol {
+            padding-left: 25px;
+            margin: 15px 0;
+        }
+
+        .l1-section li {
+            line-height: 1.8;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .l1-section li ul {
+            margin-top: 10px;
+        }
+
+        .highlight-box {
+            background: rgba(255, 200, 100, 0.15);
+            border: 1px solid rgba(255, 200, 100, 0.3);
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin: 20px 0;
+        }
+
+        .info-box {
+            background: rgba(100, 150, 255, 0.1);
+            border: 1px solid rgba(100, 150, 255, 0.3);
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin: 20px 0;
+        }
+
+        /* 流程时间线样式 */
+        .process-timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(100, 100, 100, 0.3);
+        }
+
+        .process-step {
+            position: relative;
+            margin-bottom: 35px;
+            padding-left: 25px;
+        }
+
+        .process-step::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: #555;
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,0.8);
+        }
+
+        .process-step h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .process-step p, .process-step ul {
+            font-size: 15px;
+        }
+
+        /* 对比卡片样式 */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+
+        .comparison-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 25px;
+            transition: all 0.3s;
+        }
+
+        .comparison-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .comparison-card h4 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            color: #222 !important;
+        }
+
+        .comparison-card .card-subtitle {
+            font-size: 14px;
+            color: #555 !important;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .comparison-card ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .comparison-card li {
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+
+        .card-features {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .card-features h5 {
+            font-size: 15px;
+            margin-bottom: 10px;
+            color: #333 !important;
+        }
+
+        /* 适合人群卡片 */
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .audience-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+
+        .audience-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .audience-card h4 {
+            font-size: 17px;
+            margin-bottom: 12px;
+            color: #222 !important;
+        }
+
+        .audience-card ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .audience-card li {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        /* 职责对比表 */
+        .responsibility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 25px 0;
+        }
+
+        .responsibility-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 25px;
+        }
+
+        .responsibility-box h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .responsibility-box ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .responsibility-box li {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* FAQ样式 */
+        .faq-item {
+            margin-bottom: 25px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            padding: 20px 25px;
+        }
+
+        .faq-item h4 {
+            font-size: 17px;
+            margin-bottom: 12px;
+            color: #222 !important;
+        }
+
+        .faq-item p {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* 免责声明样式 */
+        .disclaimer {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 40px;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .disclaimer h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        /* 移动端响应式 */
+        @media (max-width: 768px) {
+            .l1-container {
+                padding: 15px 20px 40px;
+            }
+
+            .l1-header h1 {
+                font-size: 28px;
+            }
+
+            .l1-section h2 {
+                font-size: 22px;
+            }
+
+            .process-timeline {
+                padding-left: 20px;
+            }
+
+            .process-step {
+                padding-left: 15px;
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .responsibility-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body style="background: url('images/new-bg.png') no-repeat center center fixed; background-size: cover;">
+    <!-- 导航栏容器 -->
+    <div id="header-container"></div>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="l1-container">
+            <!-- 页面标题 -->
+            <div class="l1-header">
+                <h1 data-i18n="l1.title">L-1 跨国公司经理 / 专业人才签证</h1>
+                <p class="subtitle" data-i18n="l1.subtitle">为跨国企业高管与核心员工设计的美国工作签证</p>
+            </div>
+
+            <!-- 简介 -->
+            <div class="l1-intro">
+                <p data-i18n="l1.intro1">L-1 是美国移民法下专门为跨国公司内部调动人员设计的一类非移民工作签证，主要包括：</p>
+
+                <div class="visa-types">
+                    <ul>
+                        <li><strong>L-1A：</strong><span data-i18n="l1.l1aDesc">跨国公司的高级管理人员 / 高级执行官</span></li>
+                        <li><strong>L-1B：</strong><span data-i18n="l1.l1bDesc">具备公司"专门知识（Specialized Knowledge）"的专业人员</span></li>
+                    </ul>
+                </div>
+
+                <p data-i18n="l1.intro2">适合已经在中国或其他国家的公司工作一段时间，希望被调派到美国关联公司担任管理或核心岗位的人选。</p>
+                <p data-i18n="l1.intro3">对于希望在美国设立或扩张分公司、子公司、办事处的企业来说，L-1 也是非常重要的工具。</p>
+            </div>
+
+            <!-- 第一部分：适合人群 -->
+            <section class="l1-section">
+                <h2 data-i18n="l1.section1Title">一、哪些企业 / 员工适合考虑 L-1？</h2>
+
+                <h3 data-i18n="l1.companyReqTitle">1. 企业层面的基本要求（简化说明）</h3>
+                <ul>
+                    <li data-i18n="l1.companyReq1">海外公司（例如中国公司）与美国公司之间存在符合要求的关联关系：总公司 / 母公司、子公司、分公司、关联企业（同一集团控制等）</li>
+                    <li data-i18n="l1.companyReq2">海外公司目前在正常运营，有真实业务和员工</li>
+                    <li data-i18n="l1.companyReq3">美国公司已经存在或准备设立，计划在美国开展实际业务</li>
+                </ul>
+
+                <div class="info-box">
+                    <p data-i18n="l1.companyNote">本所在评估时，会重点看公司之间的股权结构、控制关系、财务情况和实际运营状态，而不仅仅是"在美国注册了一个 LLC"。</p>
+                </div>
+
+                <h3 data-i18n="l1.employeeReqTitle">2. 员工个人层面的基本要求（简化说明）</h3>
+                <ul>
+                    <li data-i18n="l1.employeeReq1">在递交申请前的过去三年内，申请人必须在海外关联公司为企业全职工作至少 1 年</li>
+                    <li data-i18n="l1.employeeReq2">申请人在海外公司的职位及在美国计划担任的职位，应当符合：
+                        <ul>
+                            <li data-i18n="l1.l1aReq">L-1A：主要从事"管理 / 高管"职责，负责公司或部门的整体运营、主要决策、人事管理等</li>
+                            <li data-i18n="l1.l1bReq">L-1B：拥有公司特有的"专门知识"，例如公司独有技术、产品、流程、业务模式等，其知识对公司在美国的业务发展具有重要价值</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="info-box">
+                    <p data-i18n="l1.employeeNote">本所在评估阶段会详细了解申请人的职位职责、团队结构和日常工作内容，判断更适合走 L-1A 还是 L-1B。</p>
+                </div>
+            </section>
+
+            <!-- 第二部分：L-1A 与 L-1B 的区别 -->
+            <section class="l1-section">
+                <h2 data-i18n="l1.section2Title">二、L-1A 与 L-1B 的区别（客户可读版）</h2>
+
+                <div class="comparison-grid">
+                    <div class="comparison-card">
+                        <h4 data-i18n="l1.l1aTitle">L-1A：跨国公司高管 / 经理</h4>
+                        <p class="card-subtitle" data-i18n="l1.l1aSuitable">适合对象：</p>
+                        <ul>
+                            <li data-i18n="l1.l1aSuitable1">公司总经理、副总、事业部负责人、区域负责人</li>
+                            <li data-i18n="l1.l1aSuitable2">部门经理，直接管理多个下属并对业务有决策权</li>
+                            <li data-i18n="l1.l1aSuitable3">参与公司战略规划、预算、人事决策等重大事项</li>
+                        </ul>
+                        <div class="card-features">
+                            <h5 data-i18n="l1.mainFeatures">主要特点：</h5>
+                            <ul>
+                                <li data-i18n="l1.l1aFeature1">初次获批最长可达 3 年（新设公司一般初次较短）</li>
+                                <li data-i18n="l1.l1aFeature2">最长可延期至 7 年</li>
+                                <li data-i18n="l1.l1aFeature3">对日后申请 EB-1C 跨国公司经理绿卡有重要衔接意义</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="comparison-card">
+                        <h4 data-i18n="l1.l1bTitle">L-1B：具备专门知识的专业人员</h4>
+                        <p class="card-subtitle" data-i18n="l1.l1bSuitable">适合对象：</p>
+                        <ul>
+                            <li data-i18n="l1.l1bSuitable1">对公司特有技术、系统、产品、服务、流程有深入掌握的人</li>
+                            <li data-i18n="l1.l1bSuitable2">对公司的经营模式、独特诀窍（know-how）有不可替代的理解</li>
+                            <li data-i18n="l1.l1bSuitable3">能够在美国负责技术支持、知识转移、培训团队等</li>
+                        </ul>
+                        <div class="card-features">
+                            <h5 data-i18n="l1.mainFeatures">主要特点：</h5>
+                            <ul>
+                                <li data-i18n="l1.l1bFeature1">初次获批一般最长 3 年</li>
+                                <li data-i18n="l1.l1bFeature2">总体最长停留时间为 5 年</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <p data-i18n="l1.planningNote">在案件规划时，本所会同时考虑未来是否有意走绿卡路径（例如 EB-1C），从一开始就设计好 L-1 与后续移民申请的衔接。</p>
+                </div>
+            </section>
+
+            <!-- 第三部分：申请流程 -->
+            <section class="l1-section">
+                <h2 data-i18n="l1.section3Title">三、L-1 办理流程（本所标准操作流程）</h2>
+
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <h3 data-i18n="l1.process1Title">第 1 步：前期评估（企业 + 员工双重评估）</h3>
+                        <p data-i18n="l1.process1Intro">由本所完成，企业与员工提供基础信息。</p>
+                        <ul>
+                            <li data-i18n="l1.process1Company">企业部分：海外公司与美国公司的股权结构、控制关系；海外公司的业务、营收、员工规模，主要客户与市场；美国公司是否已经设立，是否有办公地点、业务计划</li>
+                            <li data-i18n="l1.process1Employee">员工部分：员工在海外公司的工作时长、职位、组织架构中的位置；具体工作内容、管理职责或专门知识的类型；在美国计划担任的职位、工作职责</li>
+                        </ul>
+                        <p data-i18n="l1.process1Output">输出成果：初步判断是否具备 L-1A 或 L-1B 申请基础；是否涉及"新办公室（New Office）"情形及相应要求；是否适合后续规划 EB-1C 等绿卡路径</p>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="l1.process2Title">第 2 步：签约与时间表规划</h3>
+                        <p data-i18n="l1.process2Desc">确认律师费、政府费用及其他可能成本；根据企业开业计划、员工入职时间、现有签证状态等因素，拟定时间表：公司准备资料时间、员工个人资料筹备时间、预计递案日期和预估审理时间（是否考虑加急处理）。对于有明确入职或出差时间的客户，本所会根据时限进行"倒推"，尽量预留合理缓冲期。</p>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="l1.process3Title">第 3 步：企业层面材料准备与梳理</h3>
+                        <p data-i18n="l1.process3Intro">由本所出清单，企业配合提供，本所审核。</p>
+                        <ul>
+                            <li data-i18n="l1.process3Item1">公司关联关系证明：股东名册、股权结构图、公司章程、股东决议等、母公司/子公司/分公司的公司注册文件</li>
+                            <li data-i18n="l1.process3Item2">海外公司运营证明：营业执照、纳税记录、财务报表、银行流水（视案情选取）、员工花名册、人事记录、组织架构图、合同、发票、业务介绍材料等</li>
+                            <li data-i18n="l1.process3Item3">美国公司情况：注册文件、公司章程、办公地点租约、办公照片等、商业计划、市场分析、预计财务规划（特别是新办公室案件）</li>
+                        </ul>
+                        <div class="info-box">
+                            <p data-i18n="l1.newOfficeNote">新办公室情形（New Office L-1）：如果美国公司刚刚设立或还在准备阶段，移民局会特别关注商业计划的真实性与可行性，本所会协助企业准备符合要求的商业计划书与人员规划。</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="l1.process4Title">第 4 步：员工个人材料与岗位职责说明</h3>
+                        <p data-i18n="l1.process4Intro">由本所提供模板与指导，员工和企业共同配合。</p>
+                        <ul>
+                            <li data-i18n="l1.process4Item1">员工简历（中英文）</li>
+                            <li data-i18n="l1.process4Item2">海外工作经历证明：劳动合同、在职证明、工资单、社保记录等</li>
+                            <li data-i18n="l1.process4Item3">职位职责说明：在海外公司的具体角色、管理层级、下属人数及岗位；在美国公司的预期职责、团队结构、决策权限</li>
+                            <li data-i18n="l1.process4Item4">如为 L-1B，还需说明：员工掌握的"专门知识"是什么；这种知识为什么对公司重要；在美国如何通过他/她来实现知识转移和业务发展</li>
+                        </ul>
+                        <p data-i18n="l1.process4Note">本所会协助企业把"日常工作内容"转化为符合移民局标准的"法律意义上的经理 / 专门知识描述"，而不是简单翻译一个职位名称。</p>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="l1.process5Title">第 5 步：支持文件与推荐信（视情况）</h3>
+                        <p data-i18n="l1.process5Intro">根据案件复杂度，本所可能建议：</p>
+                        <ul>
+                            <li data-i18n="l1.process5Item1">公司负责人出具支持函（Support Letter），说明：企业整体情况与发展规划、申请人在公司中的重要性、美国岗位为何需要由该申请人担任</li>
+                            <li data-i18n="l1.process5Item2">必要时，补充：关键客户的合作说明、行业合作伙伴或顾问的支持信件（视案情而定）</li>
+                        </ul>
+                        <p data-i18n="l1.process5Note">这些文件都将由本所提供草稿，由企业和相关人士审核签署，确保信息准确、一致。</p>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="l1.process6Title">第 6 步：律师意见书（Petition Letter）与 I-129 申请</h3>
+                        <p data-i18n="l1.process6Intro">这是 L-1 案件的核心文书工作，由本所负责完成。</p>
+                        <ul>
+                            <li data-i18n="l1.process6Item1">使用 Form I-129 作为主申请表，由美国公司作为申请人</li>
+                            <li data-i18n="l1.process6Item2">律师意见书中将系统说明：公司关联关系及真实运营情况、海外公司与美国公司的业务逻辑和发展计划、申请人在海外的实际职位和职责（如何符合"经理/高管/专门知识"的法律定义）、申请人在美国拟担任的职位和职责（如何支持美国公司的业务发展）</li>
+                            <li data-i18n="l1.process6Item3">所有证据将按照清晰的目录分类（Exhibits），便于审理官查阅及核对</li>
+                        </ul>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="l1.process7Title">第 7 步：递交、加急与审理跟进</h3>
+                        <p data-i18n="l1.process7Intro">由本所统一递交与跟进。</p>
+                        <ul>
+                            <li data-i18n="l1.process7Item1">整理完整的 I-129 申请包并递交至美国移民局</li>
+                            <li data-i18n="l1.process7Item2">是否采用 Premium Processing（加急处理），视企业安排与当前政策决定</li>
+                            <li data-i18n="l1.process7Item3">递交后：通知企业与员工收据号码、提醒预计处理时间与可能的下一步</li>
+                        </ul>
+                        <p data-i18n="l1.process7RFE">如收到 RFE（补件通知）：本所会分析移民局关注的具体问题（例如对管理职责的质疑、对公司运营的疑问等），指导企业补充材料或提供进一步说明，在期限内提交书面答复与补充证据。</p>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="l1.process8Title">第 8 步：获批后签证 / 身份安排</h3>
+                        <ul>
+                            <li data-i18n="l1.process8Abroad">人在境外：持获批通知前往美国使领馆申请 L-1 签证、准备签证面谈资料（工作证明、公司材料摘选等）、签证获批后入境美国，按批准的期限开始工作</li>
+                            <li data-i18n="l1.process8US">人在美国境内：以身份转换方式获批后，可在美国境内直接以 L-1 身份工作、后续如需延期（Extension），本所协助准备延期申请材料</li>
+                            <li data-i18n="l1.process8LongTerm">长期规划：对于 L-1A 管理人员，后续有机会规划 EB-1C 跨国公司经理人绿卡、本所可以从一开始就将 L-1 与 EB-1C / 其他职业移民类别打包规划，减少后续重复准备材料的工作量</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第四部分：职责分工 -->
+            <section class="l1-section">
+                <h2 data-i18n="l1.section4Title">四、客户（企业 + 员工）与本所的分工</h2>
+
+                <div class="responsibility-grid">
+                    <div class="responsibility-box">
+                        <h4 data-i18n="l1.clientRespTitle">企业和员工主要需要做的</h4>
+                        <ul>
+                            <li data-i18n="l1.clientResp1">提供准确的公司股权结构和关联关系信息</li>
+                            <li data-i18n="l1.clientResp2">配合提供财务、业务、人事等基础运营资料</li>
+                            <li data-i18n="l1.clientResp3">员工提供简历和证明材料，说明岗位职责和工作内容</li>
+                            <li data-i18n="l1.clientResp4">按时反馈文书草稿，确认信息无误</li>
+                        </ul>
+                    </div>
+
+                    <div class="responsibility-box">
+                        <h4 data-i18n="l1.firmRespTitle">本所主要负责的</h4>
+                        <ul>
+                            <li data-i18n="l1.firmResp1">法律可行性评估（企业 + 员工双重维度）</li>
+                            <li data-i18n="l1.firmResp2">制定详细材料清单并审核所有证据</li>
+                            <li data-i18n="l1.firmResp3">起草公司支持函、岗位职责说明、商业计划（如需）、律师意见书等</li>
+                            <li data-i18n="l1.firmResp4">准备并递交 I-129 申请，处理移民局补件</li>
+                            <li data-i18n="l1.firmResp5">协助安排签证面谈前的材料与问答解释</li>
+                            <li data-i18n="l1.firmResp6">结合企业长远规划，设计 L-1 与绿卡路径的衔接方案</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第五部分：时间线 -->
+            <section class="l1-section">
+                <h2 data-i18n="l1.section5Title">五、时间线示例（以企业情况和政策为准）</h2>
+                <p data-i18n="l1.timelineIntro">以下为经验值，实际进度取决于企业资料完备程度、案件复杂性以及移民局审理速度。</p>
+                <ul>
+                    <li data-i18n="l1.timeline1">企业与员工资料收集：约 3–6 周</li>
+                    <li data-i18n="l1.timeline2">文书撰写与定稿：约 3–6 周</li>
+                    <li data-i18n="l1.timeline3">I-129 递交后（如使用加急处理）：在官方加急时限内获得批准或补件通知</li>
+                    <li data-i18n="l1.timeline4">I-129 递交后（如不加急）：普通审理可能需要数周至数月</li>
+                </ul>
+                <p data-i18n="l1.timelineNote">对于"新办公室 L-1"，本所通常会建议企业提前规划时间，避免因场地、商业计划等未准备充分而影响审批。</p>
+            </section>
+
+            <!-- 第六部分：FAQ -->
+            <section class="l1-section">
+                <h2 data-i18n="l1.section6Title">六、常见问题（FAQ）</h2>
+
+                <div class="faq-item">
+                    <h4 data-i18n="l1.faq1Q">1. L-1 一定要先在美国注册好公司才能申请吗？</h4>
+                    <p data-i18n="l1.faq1A">一般需要有美国实体（公司）存在，但对于"新办公室"情形，可以在美国公司刚设立不久时申请 L-1。此类案件需要更详细的商业计划和人员规划，本所会根据企业实际情况设计方案。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-i18n="l1.faq2Q">2. L-1 和 H-1B 有什么区别？</h4>
+                    <p data-i18n="l1.faq2A">L-1 针对跨国公司内部调动，有海外工作经历和公司关联关系要求；H-1B 面向专业职位，但有"抽签名额"限制。对于已经在海外公司任职、希望调到美国关联公司的中高层或核心员工，L-1 往往是更贴合的选择。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-i18n="l1.faq3Q">3. L-1A 能直接转绿卡吗？</h4>
+                    <p data-i18n="l1.faq3A">不能"自动转绿卡"，但 L-1A 往往是申请 EB-1C 绿卡的前期身份基础之一。只要满足 EB-1C 的标准（包括公司运营情况、管理岗位等），可以在合适的时机由本所帮助规划和递交移民申请。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-i18n="l1.faq4Q">4. L-1 签证持有人可以带家属吗？</h4>
+                    <p data-i18n="l1.faq4A">可以。配偶和 21 岁以下未婚子女可以申请 L-2 附属身份；在现行政策下，L-2 配偶通常可以获授权在美国合法工作（以当时政策为准）。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-i18n="l1.faq5Q">5. 如果 L-1 被拒了怎么办？</h4>
+                    <p data-i18n="l1.faq5A">视具体拒绝原因，可以考虑：补充证据后重新申请、调整架构或岗位后重新规划路径、或视案情考虑其他签证或移民类别。本所在前期评估时，会尽可能提前发现潜在弱点，避免明显缺陷案件盲目递交。</p>
+                </div>
+            </section>
+
+            <!-- 免责声明 -->
+            <div class="disclaimer">
+                <h3 data-i18n="l1.disclaimerTitle">重要声明</h3>
+                <ul>
+                    <li data-i18n="l1.disclaimer1">本页面内容仅为 L-1 签证的一般性介绍，不构成对任何具体案件的法律意见。</li>
+                    <li data-i18n="l1.disclaimer2">美国移民政策、审理标准和政府费用均可能随时间调整，所有信息以美国移民局（USCIS）及相关官方渠道的最新发布为准。</li>
+                    <li data-i18n="l1.disclaimer3">如需对贵公司及具体员工情况进行详细评估，并获得定制化的 L-1 及后续绿卡规划方案，欢迎与本所预约一对一法律咨询。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 联系方式区域 -->
+        <section id="contact">
+            <div id="footer-container" class="no-map"></div>
+        </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/navigation.js"></script>
+    <script>
+        // 组件加载器
+        async function loadComponent(componentName, targetId) {
+            try {
+                const response = await fetch(`components/${componentName}.html`);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${componentName}`);
+                }
+                const html = await response.text();
+                document.getElementById(targetId).innerHTML = html;
+            } catch (error) {
+                console.error(`Error loading component ${componentName}:`, error);
+            }
+        }
+
+        // 页面加载时自动加载组件
+        document.addEventListener('DOMContentLoaded', async function() {
+            await loadComponent('header', 'header-container');
+            await loadComponent('footer', 'footer-container');
+        });
+    </script>
+</body>
+</html>
