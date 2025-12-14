@@ -47,12 +47,15 @@
     <main class="main-content">
         <!-- 联系方式区域 -->
         <section id="contact">
-            <div id="footer-container"></div>
+            <div id="contact-info-container"></div>
         </section>
 
         <!-- 预约律师咨询区域 -->
         <div id="section-appointment"></div>
     </main>
+
+    <!-- 页脚容器 -->
+    <div id="footer-container"></div>
 
     <script src="js/config.js"></script>
     <script src="js/i18n.js"></script>
@@ -91,6 +94,7 @@
         // 页面加载时自动加载所有模块
         document.addEventListener('DOMContentLoaded', async function() {
             await loadComponent('header', 'header-container');
+            await loadSection('contact-info', 'contact-info-container');
             await loadSection('appointment', 'section-appointment');
             await loadComponent('footer', 'footer-container');
         });
