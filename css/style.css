@@ -254,6 +254,51 @@
             background-position: center;
         }
 
+        /* 全宽服务卡片样式 */
+        .service-card-full {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 30px 40px;
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .service-card-full:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card-full h3 {
+            color: #333333;
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .service-card-full p {
+            color: #333333;
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .service-card-full {
+                padding: 20px 25px;
+            }
+
+            .service-card-full h3 {
+                font-size: 18px;
+            }
+
+            .service-card-full p {
+                font-size: 14px;
+                line-height: 1.7;
+            }
+        }
+
         /* 预约表单 */
         .appointment-form {
             max-width: 700px;

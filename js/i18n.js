@@ -22,15 +22,21 @@ const translations = {
             value4: '信赖'
         },
         services: {
-            title: '业务领域',
-            civil: '民事诉讼',
-            immigration: '移民法律',
-            familylaw: '婚姻家事',
-            realproperty: '房地产法律',
-            personalinjury: '人身伤害',
-            criminal: '刑事辩护',
-            business: '商业法律',
-            ip: '知识产权'
+            title: '知识产权和跨境电商',
+            corporate: '企业法务与交易支持',
+            corporateDesc: '我们为跨境电商、科技公司与创作者业务提供从设立到扩张的全周期法律支持，涵盖 LLC 与 Corporation 的设立与重组、股权与治理结构设计、合伙人/股东机制与控制权安排，以及核心商业合同与合作框架的起草、审阅与谈判，并通过体系化文件与流程设计，将法律从"事后救火"转化为可复用的增长底层能力。',
+            ecommerce: '电商与线上业务合规',
+            ecommerceDesc: '面向平台型经营与在线交易，我们围绕供应链、履约、退款与售后、数据与隐私等高频风险点建立可执行的合规框架，覆盖采购/代发与履约协议、销售条款与 PO 条款、以及网站 Terms/Privacy 等核心线上文件，确保业务在规模化增长时依然保持规则适配与风险可控。',
+            schedulea: 'Schedule A 诉讼与 TRO 应诉',
+            scheduleaDesc: '针对跨境电商常见的 Schedule A 批量诉讼及 TRO/资产冻结，我们以"快速止损、恢复资金流、保持运营"为目标，第一时间评估风险与证据，制定撤销/修改救济与应诉路径，主导与对方律师的谈判与和解结构，并同步提供合规与产品/页面整改建议，最大限度降低业务中断与复发风险。',
+            cpsc: 'CPSC 产品安全合规与调查应对',
+            cpscDesc: '面向进入美国市场的消费品与硬件产品，我们提供 CPSC 风险预审与合规落地支持，包括标签、说明书与警示信息评估、合规文件体系搭建，以及在调查、投诉、抽检与召回等情形下的官方沟通与应对方案设计，帮助品牌在增长与合规之间建立长期可持续的安全边界。',
+            apex: '亚马逊专利评估（APEX）程序应对',
+            apexDesc: '在 APEX 程序中，时间窗口与技术判断决定成本与结果，我们通过专利—产品技术比对形成风险意见，并结合你的商业目标选择最优路径（参与 APEX、产品调整、谈判和解或其他策略），同时把短期应对与后续产品迭代、专利布局与竞争策略衔接，避免"解决一次、再来一次"。',
+            iplitigation: '知识产权侵权诉讼（商标 / 版权 / 专利）',
+            iplitigationDesc: '我们在美国联邦及州法院代理各类知识产权侵权案件，围绕权利基础与证据体系构建诉讼策略，推进禁令救济与损害赔偿主张，并结合平台与渠道的现实机制制定可执行的控制方案，确保维权动作与商业结果一致、节奏可控。',
+            ipstrategy: '知识产权布局与品牌资产规划',
+            ipstrategyDesc: '我们协助跨境品牌与创作者将"内容、设计与技术"转化为可防御、可授权、可交易的资产，通过多国商标与专利组合策略、创作成果的版权与合同安排，以及品牌备案与合作交易中的知识产权条款设计，为全球化增长建立清晰且可持续的权利边界。'
         },
         appointment: {
             title: '预约律师咨询',
@@ -103,15 +109,21 @@ const translations = {
             value4: 'Trusted by Clients.'
         },
         services: {
-            title: 'Practice Areas',
-            civil: 'Civil Litigation',
-            immigration: 'Immigration Law',
-            familylaw: 'Family Law',
-            realproperty: 'Real Estate Law',
-            personalinjury: 'Personal Injury',
-            criminal: 'Criminal Defense',
-            business: 'Business Law',
-            ip: 'Intellectual Property'
+            title: 'IP & Cross-border E-commerce',
+            corporate: 'Corporate & Transactional Counsel',
+            corporateDesc: 'We advise cross-border e-commerce businesses, technology companies, and creator-led ventures through every stage of growth, including LLC and corporation formation and restructuring. Our work focuses on governance structures, equity and control arrangements among founders and stakeholders, and the drafting and negotiation of core commercial agreements—building repeatable legal infrastructure that supports scalable growth and disciplined risk management.',
+            ecommerce: 'E-Commerce & Online Business Compliance',
+            ecommerceDesc: 'We help platform-based and online businesses establish practical compliance frameworks aligned with their operational realities. Our services cover supply chain and fulfillment arrangements, sales and purchase order terms, and essential website documentation, including terms of use and privacy policies, ensuring that growth across platforms and markets remains legally sustainable.',
+            schedulea: 'Schedule A Litigation & TRO Defense',
+            scheduleaDesc: 'We represent cross-border sellers in Schedule A mass litigation and TRO-related asset freezes, prioritizing rapid risk assessment, preservation of cash flow, and business continuity. Our approach includes developing response strategies to dissolve or modify injunctive relief, leading negotiations with opposing counsel, and implementing compliance and listing-level adjustments to reduce recurrence.',
+            cpsc: 'CPSC Product Safety Compliance & Investigations',
+            cpscDesc: 'For consumer products entering the U.S. market, we advise on compliance with Consumer Product Safety Commission (CPSC) regulations, including pre-market risk assessments, labeling and instruction review, and compliance documentation. We also represent clients in CPSC investigations, recalls, and agency communications, helping brands manage regulatory exposure while protecting long-term market access.',
+            apex: 'Amazon Patent Evaluation Express (APEX) Proceedings',
+            apexDesc: 'In Amazon\'s APEX program, timing and technical analysis are critical. We conduct patent-to-product comparisons, provide risk assessments, and guide clients through strategic decision-making, including participation in APEX, product modifications, negotiated resolutions, and longer-term patent positioning aligned with product development and competition strategy.',
+            iplitigation: 'Intellectual Property Litigation (Trademark, Copyright & Patent)',
+            iplitigationDesc: 'We represent clients in intellectual property disputes in U.S. federal and state courts, handling trademark, copyright, and patent infringement matters. Our work includes developing enforceable rights and evidentiary records, pursuing injunctive relief and damages, and leveraging platform and channel mechanisms to achieve commercially meaningful outcomes.',
+            ipstrategy: 'Intellectual Property Strategy & Brand Asset Planning',
+            ipstrategyDesc: 'We advise cross-border brands and creators on building defensible and monetizable IP portfolios through coordinated trademark and patent strategies across jurisdictions. Our work also includes contractual protection of creative assets, brand registry and licensing arrangements, and IP provisions in commercial transactions, transforming creative and technical output into durable business assets.'
         },
         appointment: {
             title: 'Book a Free Attorney Consultation',

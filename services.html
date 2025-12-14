@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>业务领域 - 美国信律恒达律师事务所</title>
+    <title>知识产权和跨境电商 - 美国信律恒达律师事务所</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         /* 所有背景透明 */
@@ -33,33 +33,30 @@
 
     <!-- 主要内容 -->
     <main class="main-content">
-        <!-- 业务领域区域 -->
+        <!-- 知识产权和跨境电商区域 -->
         <section id="services">
-            <h2 class="section-title" data-i18n="services.title">业务领域</h2>
+            <h2 class="section-title" data-i18n="services.title">知识产权和跨境电商</h2>
             <div class="services-container">
-                <!-- 民事诉讼服务 -->
-                <div id="section-services-civil"></div>
+                <!-- 企业法务与交易支持 -->
+                <div id="section-services-corporate"></div>
 
-                <!-- 移民法律服务 -->
-                <div id="section-services-immigration"></div>
+                <!-- 电商与线上业务合规 -->
+                <div id="section-services-ecommerce"></div>
 
-                <!-- 婚姻家事法律服务 -->
-                <div id="section-services-familylaw"></div>
+                <!-- Schedule A 诉讼与 TRO 应诉 -->
+                <div id="section-services-schedulea"></div>
 
-                <!-- 房地产法律服务 -->
-                <div id="section-services-realproperty"></div>
+                <!-- CPSC 产品安全合规与调查应对 -->
+                <div id="section-services-cpsc"></div>
 
-                <!-- 人身伤害服务 -->
-                <div id="section-services-personalinjury"></div>
+                <!-- 亚马逊专利评估（APEX）程序应对 -->
+                <div id="section-services-apex"></div>
 
-                <!-- 刑事辩护服务 -->
-                <div id="section-services-criminal"></div>
+                <!-- 知识产权侵权诉讼 -->
+                <div id="section-services-iplitigation"></div>
 
-                <!-- 商业法律服务 -->
-                <div id="section-services-business"></div>
-
-                <!-- 知识产权法律服务 -->
-                <div id="section-services-ip"></div>
+                <!-- 知识产权布局与品牌资产规划 -->
+                <div id="section-services-ipstrategy"></div>
             </div>
         </section>
 
@@ -104,14 +101,13 @@
         // 页面加载时自动加载所有模块
         document.addEventListener('DOMContentLoaded', async function() {
             await loadComponent('header', 'header-container');
-            await loadSection('services-civil', 'section-services-civil');
-            await loadSection('services-immigration', 'section-services-immigration');
-            await loadSection('services-familylaw', 'section-services-familylaw');
-            await loadSection('services-realproperty', 'section-services-realproperty');
-            await loadSection('services-personalinjury', 'section-services-personalinjury');
-            await loadSection('services-criminal', 'section-services-criminal');
-            await loadSection('services-business', 'section-services-business');
-            await loadSection('services-ip', 'section-services-ip');
+            await loadSection('services-corporate', 'section-services-corporate');
+            await loadSection('services-ecommerce', 'section-services-ecommerce');
+            await loadSection('services-schedulea', 'section-services-schedulea');
+            await loadSection('services-cpsc', 'section-services-cpsc');
+            await loadSection('services-apex', 'section-services-apex');
+            await loadSection('services-iplitigation', 'section-services-iplitigation');
+            await loadSection('services-ipstrategy', 'section-services-ipstrategy');
             await loadComponent('footer', 'footer-container');
         });
     </script>
