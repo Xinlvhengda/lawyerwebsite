@@ -51,13 +51,12 @@ async function handleSubmit(event) {
         name: formData.get('name'),
         phone: formData.get('phone'),
         email: formData.get('email'),
-        caseType: formData.get('case-type'),
         preferredDate: formData.get('preferred-date'),
         message: formData.get('message')
     };
 
     // 验证必填字段
-    if (!data.name || !data.phone || !data.caseType || !data.message) {
+    if (!data.name || !data.phone || !data.message) {
         alert('❌ 请填写所有必填项（标记 * 的字段）');
         return;
     }

@@ -200,22 +200,6 @@
                 </div>
             </div>
 
-            <div class="filter-bar">
-                <label>筛选案件类型：</label>
-                <select id="caseTypeFilter">
-                    <option value="all">全部</option>
-                    <option value="civil">民事诉讼</option>
-                    <option value="immigration">移民法律</option>
-                    <option value="familylaw">婚姻家事</option>
-                    <option value="realproperty">房地产法律</option>
-                    <option value="personalinjury">人身伤害</option>
-                    <option value="criminal">刑事辩护</option>
-                    <option value="business">商业法律</option>
-                    <option value="ip">知识产权</option>
-                    <option value="other">其他</option>
-                </select>
-            </div>
-
             <div class="appointments-list" id="appointmentsList">
                 <!-- 预约列表将在这里动态生成 -->
             </div>
@@ -224,37 +208,15 @@
 
     <script src="../js/config.js"></script>
     <script>
-        // 获取案件类型中文名称
-        function getCaseTypeName(caseType) {
-            const types = {
-                'civil': '民事诉讼',
-                'immigration': '移民法律',
-                'familylaw': '婚姻家事',
-                'realproperty': '房地产法律',
-                'personalinjury': '人身伤害',
-                'criminal': '刑事辩护',
-                'business': '商业法律',
-                'ip': '知识产权',
-                'other': '其他'
-            };
-            return types[caseType] || caseType;
-        }
-
         // 加载预约数据
         function loadAppointments() {
             const appointments = JSON.parse(localStorage.getItem('appointments') || '[]');
             const listContainer = document.getElementById('appointmentsList');
-            const filter = document.getElementById('caseTypeFilter').value;
-
-            // 筛选预约
-            const filteredAppointments = filter === 'all'
-                ? appointments
-                : appointments.filter(apt => apt.caseType === filter);
 
             // 按时间倒序排列
-            filteredAppointments.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+            appointments.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
 
-            if (filteredAppointments.length === 0) {
+            if (appointments.length === 0) {
                 listContainer.innerHTML = `
                     <div class="empty-state">
                         <h3>暂无预约信息</h3>
@@ -265,12 +227,11 @@
             }
 
             // 生成预约列表HTML
-            listContainer.innerHTML = filteredAppointments.map(apt => `
+            listContainer.innerHTML = appointments.map(apt => `
                 <div class="appointment-item">
                     <div class="appointment-header">
                         <div>
                             <span class="appointment-name">${apt.name}</span>
-                            <span class="case-type-badge">${getCaseTypeName(apt.caseType)}</span>
                         </div>
                         <span class="appointment-date">${new Date(apt.timestamp).toLocaleString('zh-CN')}</span>
                     </div>
@@ -326,9 +287,6 @@
                 new Date(apt.timestamp) >= monthStart
             ).length;
         }
-
-        // 筛选变化时重新加载
-        document.getElementById('caseTypeFilter').addEventListener('change', loadAppointments);
 
         // 页面加载时加载预约数据
         document.addEventListener('DOMContentLoaded', function() {
