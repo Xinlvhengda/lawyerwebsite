@@ -6,10 +6,9 @@ const translations = {
         },
         nav: {
             about: '关于我们',
-            services: '业务领域',
-            appointment: '案件咨询',
-            contact: '联系方式',
-            joinus: '加入我们'
+            services: '知识产权和跨境电商',
+            appointment: '移民',
+            contact: '联系我们'
         },
         about: {
             title: '关于我们',
@@ -88,10 +87,9 @@ const translations = {
         },
         nav: {
             about: 'About Us',
-            services: 'Practice Areas',
-            appointment: 'Consultation',
-            contact: 'Contact',
-            joinus: 'Join Us'
+            services: 'IP & Cross-border E-commerce',
+            appointment: 'Immigration',
+            contact: 'Contact Us'
         },
         about: {
             title: 'About Us',
