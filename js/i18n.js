@@ -8,7 +8,12 @@ const translations = {
             about: '关于我们',
             services: '知识产权和跨境电商',
             appointment: '移民',
-            contact: '联系我们'
+            contact: '联系我们',
+            eb5: 'EB-5 投资移民',
+            eb1a: 'EB-1A 杰出人才移民',
+            niw: 'NIW 国家利益豁免（EB-2）',
+            l1: 'L-1 跨国公司经理/专业人才签证',
+            o1: 'O-1 杰出人才工作签证'
         },
         about: {
             title: '关于我们',
@@ -95,7 +100,12 @@ const translations = {
             about: 'About Us',
             services: 'IP & Cross-border E-commerce',
             appointment: 'Immigration',
-            contact: 'Contact Us'
+            contact: 'Contact Us',
+            eb5: 'EB-5 Investor Visa',
+            eb1a: 'EB-1A Extraordinary Ability',
+            niw: 'NIW National Interest Waiver (EB-2)',
+            l1: 'L-1 Intracompany Transferee Visa',
+            o1: 'O-1 Extraordinary Ability Visa'
         },
         about: {
             title: 'About Us',
