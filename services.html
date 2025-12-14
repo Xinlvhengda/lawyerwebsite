@@ -24,12 +24,104 @@
         }
         .section-title {
             color: #333333 !important;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 60px;
         }
 
-        /* 手机端调整 */
+        /* 服务卡片容器 */
+        .services-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card-full {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 40px;
+            transition: all 0.3s;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card-full:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .service-card-full h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #2c2c2c !important;
+            display: block;
+            width: 100%;
+        }
+
+        .service-card-full .subtitle {
+            font-size: 18px;
+            font-style: italic;
+            color: #555 !important;
+            margin-bottom: 25px;
+            display: block;
+            width: 100%;
+        }
+
+        .service-card-full p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333 !important;
+            margin-bottom: 30px;
+            display: block;
+            width: 100%;
+        }
+
+        .service-card-full .learn-more {
+            display: inline-block;
+            padding: 15px 40px;
+            background: rgba(255, 255, 255, 0.3);
+            color: #333 !important;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        .service-card-full .learn-more:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateX(5px);
+        }
+
+        /* 移动端响应式 */
         @media (max-width: 768px) {
+            .section-title {
+                font-size: 28px;
+                margin-bottom: 40px;
+            }
+
             .services-container {
                 padding: 0 15px !important;
+            }
+
+            .service-card-full {
+                padding: 30px 20px;
+            }
+
+            .service-card-full h3 {
+                font-size: 22px;
+            }
+
+            .service-card-full p {
+                font-size: 15px;
+            }
+
+            .service-card-full .learn-more {
+                padding: 12px 30px;
             }
         }
     </style>
