@@ -13,9 +13,8 @@
                 </div>
             </div>
 
-            <!-- 右侧：电话和语言选择 -->
+            <!-- 右侧：语言选择 -->
             <div class="header-right">
-                <span class="header-phone" id="header-phone">📞 +1 718 878 4494</span>
                 <div class="lang-toggle">
                     <span id="lang-en" class="lang-option active" onclick="switchLanguage('en')">English</span>
                     <span class="lang-separator">/</span>
@@ -321,9 +320,7 @@
 if (typeof getContactInfo === 'function') {
     const info = getContactInfo();
     const lawyerNameEl = document.getElementById('header-lawyer-name');
-    const phoneEl = document.getElementById('header-phone');
 
     if (lawyerNameEl) lawyerNameEl.textContent = info.lawyerName;
-    if (phoneEl) phoneEl.textContent = `📞 ${info.phone1}`;
 }
 </script>
