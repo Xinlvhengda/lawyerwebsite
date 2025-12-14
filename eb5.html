@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EB-5 投资移民 - 美国信律恒达律师事务所</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 所有背景透明 */
+        .main-content, .main-content > section, .main-content > div {
+            background: transparent !important;
+        }
+        .hero-section, .appointment-form, .page-footer, .footer-info, .footer-content {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        .header, .header-top, .header-nav {
+            background: transparent !important;
+        }
+        /* 所有文字改为深灰色 */
+        h1, h2, h3, h4, h5, h6, p, span, div, label, li, a, strong {
+            color: #333333 !important;
+        }
+        .section-title {
+            color: #333333 !important;
+        }
+
+        /* EB-5页面专用样式 */
+        .eb5-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 40px 60px;
+        }
+
+        .eb5-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .eb5-header h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .eb5-header .subtitle {
+            font-size: 18px;
+            color: #555 !important;
+            font-style: italic;
+        }
+
+        .eb5-intro {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .eb5-intro p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .investment-amounts {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #666;
+            padding: 20px 25px;
+            margin: 20px 0;
+        }
+
+        .investment-amounts ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .investment-amounts li {
+            padding: 8px 0;
+            font-size: 16px;
+        }
+
+        .investment-amounts li strong {
+            color: #222 !important;
+        }
+
+        .eb5-section {
+            margin-bottom: 50px;
+        }
+
+        .eb5-section h2 {
+            font-size: 26px;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .eb5-section h3 {
+            font-size: 20px;
+            margin: 25px 0 15px;
+        }
+
+        .eb5-section p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .eb5-section ul {
+            padding-left: 25px;
+            margin: 15px 0;
+        }
+
+        .eb5-section li {
+            line-height: 1.8;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .eb5-section li ul {
+            margin-top: 10px;
+        }
+
+        .highlight-box {
+            background: rgba(255, 200, 100, 0.15);
+            border: 1px solid rgba(255, 200, 100, 0.3);
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin: 20px 0;
+        }
+
+        .highlight-box strong {
+            color: #333 !important;
+        }
+
+        .warning-box {
+            background: rgba(255, 100, 100, 0.1);
+            border: 1px solid rgba(255, 100, 100, 0.3);
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin: 20px 0;
+        }
+
+        /* 流程时间线样式 */
+        .process-timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(100, 100, 100, 0.3);
+        }
+
+        .process-step {
+            position: relative;
+            margin-bottom: 35px;
+            padding-left: 25px;
+        }
+
+        .process-step::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: #555;
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,0.8);
+        }
+
+        .process-step h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .process-step p, .process-step ul {
+            font-size: 15px;
+        }
+
+        /* 服务列表样式 */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .service-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+
+        .service-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .service-item h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* FAQ样式 */
+        .faq-item {
+            margin-bottom: 25px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            padding: 20px 25px;
+        }
+
+        .faq-item h4 {
+            font-size: 17px;
+            margin-bottom: 12px;
+            color: #222 !important;
+        }
+
+        .faq-item p {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* 免责声明样式 */
+        .disclaimer {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 40px;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .disclaimer h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        /* 移动端响应式 */
+        @media (max-width: 768px) {
+            .eb5-container {
+                padding: 15px 20px 40px;
+            }
+
+            .eb5-header h1 {
+                font-size: 28px;
+            }
+
+            .eb5-section h2 {
+                font-size: 22px;
+            }
+
+            .process-timeline {
+                padding-left: 20px;
+            }
+
+            .process-step {
+                padding-left: 15px;
+            }
+        }
+    </style>
+</head>
+<body style="background: url('images/new-bg.png') no-repeat center center fixed; background-size: cover;">
+    <!-- 导航栏容器 -->
+    <div id="header-container"></div>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="eb5-container">
+            <!-- 页面标题 -->
+            <div class="eb5-header">
+                <h1 data-i18n="eb5.title">EB-5 投资移民</h1>
+                <p class="subtitle" data-i18n="eb5.subtitle">通过合规投资获得美国永久绿卡的移民项目</p>
+            </div>
+
+            <!-- 简介 -->
+            <div class="eb5-intro">
+                <p data-i18n="eb5.intro1">EB-5（Employment-Based Fifth Preference）是美国职业移民第五优先类别，即"投资移民"。申请人通过向美国"新商业企业（New Commercial Enterprise）"投资一定金额资金，并为美国创造至少 10 个全职就业岗位，即可为自己及配偶、未成年子女申请美国永久居民（绿卡）。</p>
+
+                <p data-i18n="eb5.intro2">根据 2022 年《EB-5 改革与诚信法案》（EB-5 Reform and Integrity Act，简称 RIA），目前主要投资金额为：</p>
+
+                <div class="investment-amounts">
+                    <ul>
+                        <li><strong data-i18n="eb5.amount1">1,050,000 美金</strong>：<span data-i18n="eb5.amount1Desc">非目标就业区（Non-TEA）</span></li>
+                        <li><strong data-i18n="eb5.amount2">800,000 美金</strong>：<span data-i18n="eb5.amount2Desc">投资于目标就业区（TEA，包括偏远地区或高失业地区）或合格的基础设施项目</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 第一部分：适合人群 -->
+            <section class="eb5-section">
+                <h2 data-i18n="eb5.section1Title">一、EB-5 适合哪些客户？</h2>
+                <p data-i18n="eb5.section1Intro">典型适用人群包括（不限于）：</p>
+                <ul>
+                    <li data-i18n="eb5.client1">具有一定资产、希望通过投资方式全家获得美国绿卡的高净值人士</li>
+                    <li data-i18n="eb5.client2">原本考虑通过 EB-1A、NIW 等途径移民，但希望多一条"资本 + 居留"路径的人</li>
+                    <li data-i18n="eb5.client3">有意在美国开办企业、参与项目开发、子女教育规划等的家庭</li>
+                    <li data-i18n="eb5.client4">已有美国签证身份（如 F-1、H-1B 等），希望通过投资移民加快拿绿卡进程的申请人</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong data-i18n="eb5.importantNote">重要提示：</strong> <span data-i18n="eb5.importantNoteText">EB-5 是"移民 + 投资"的结合：移民层面关注资金合法来源、就业创造、类别与排期等；投资层面存在本金亏损风险，收益不确定，不保证返还。建议在专业移民律师和独立金融顾问的协助下综合评估。</span></p>
+                </div>
+            </section>
+
+            <!-- 第二部分：法律要求 -->
+            <section class="eb5-section">
+                <h2 data-i18n="eb5.section2Title">二、EB-5 的基本法律要求</h2>
+
+                <h3 data-i18n="eb5.req1Title">1. 投资金额要求</h3>
+                <ul>
+                    <li data-i18n="eb5.req1Item1">标准投资金额：1,050,000 美金</li>
+                    <li data-i18n="eb5.req1Item2">若投资于符合条件的 TEA（目标就业区）/ 农村地区 / 合格基础设施项目，最低金额可为 800,000 美金</li>
+                </ul>
+
+                <h3 data-i18n="eb5.req2Title">2. 就业创造要求</h3>
+                <ul>
+                    <li data-i18n="eb5.req2Item1">每位主申请人所对应的投资必须创造或保留至少 10 个全职工作岗位</li>
+                    <li data-i18n="eb5.req2Item2">就业岗位需为合格美国工人（U.S. workers），并且为全职（通常指每周至少 35 小时）</li>
+                    <li data-i18n="eb5.req2Item3">对于区域中心项目，可计入间接和诱导就业；对于直投项目，一般仅计算企业直接雇佣的人员</li>
+                </ul>
+
+                <h3 data-i18n="eb5.req3Title">3. 投资本金"真实投入、处于风险中"</h3>
+                <ul>
+                    <li data-i18n="eb5.req3Item1">资金必须实际投入美国"新商业企业"，不得仅停留在个人账户或仅为纸面安排</li>
+                    <li data-i18n="eb5.req3Item2">投资须"处于风险中（at risk）"，不能保证固定回报或保底返还</li>
+                    <li data-i18n="eb5.req3Item3">不能以完全有担保、无风险的债权形式替代真实股权/风险投资</li>
+                </ul>
+
+                <h3 data-i18n="eb5.req4Title">4. 资金来源与路径合法</h3>
+                <ul>
+                    <li data-i18n="eb5.req4Item1">需证明投资资金的合法来源（source of funds），以及从来源地到美国项目账户的资金路径（path of funds）清晰可追溯</li>
+                    <li data-i18n="eb5.req4Item2">常见资金来源包括：工资收入、公司分红、房产出售、股权转让、继承、赠与、合法借款等</li>
+                    <li data-i18n="eb5.req4Item3">RIA 和后续政策对资金来源、第三方费用、项目方信息披露要求更为严格</li>
+                </ul>
+
+                <h3 data-i18n="eb5.req5Title">5. 条件绿卡与转为永久绿卡</h3>
+                <ul>
+                    <li data-i18n="eb5.req5Item1">EB-5 首先获得的是 2 年有效的"有条件绿卡"</li>
+                    <li data-i18n="eb5.req5Item2">在条件绿卡到期前，需要递交 I-829 申请，证明投资维持、就业创造达标</li>
+                    <li data-i18n="eb5.req5Item3">I-829 获批后，转为正式永久绿卡</li>
+                </ul>
+            </section>
+
+            <!-- 第三部分：投资模式 -->
+            <section class="eb5-section">
+                <h2 data-i18n="eb5.section3Title">三、EB-5 投资模式与类别</h2>
+
+                <h3 data-i18n="eb5.mode1Title">1. 直投（Direct EB-5）</h3>
+                <ul>
+                    <li data-i18n="eb5.mode1Item1">申请人直接投资于自己或他人控制的运营企业</li>
+                    <li data-i18n="eb5.mode1Item2">就业岗位一般需要是该企业"直接雇佣"的员工</li>
+                    <li data-i18n="eb5.mode1Item3">对企业经营参与度较高，适合有清晰商业规划、愿意实际管理企业的投资人</li>
+                </ul>
+
+                <h3 data-i18n="eb5.mode2Title">2. 区域中心项目（Regional Center）</h3>
+                <ul>
+                    <li data-i18n="eb5.mode2Item1">投资人将资金投入经 USCIS 指定的区域中心（Regional Center）项目</li>
+                    <li data-i18n="eb5.mode2Item2">就业创造可通过"经济模型"计算间接与诱导就业，灵活度更高</li>
+                    <li data-i18n="eb5.mode2Item3">多数投资人偏向通过区域中心投资 —— 但项目质量差异很大，需要谨慎选择</li>
+                </ul>
+
+                <h3 data-i18n="eb5.mode3Title">3. TEA（目标就业区）及"预留签证"</h3>
+                <p data-i18n="eb5.mode3Intro">根据现行法律和政策，目标就业区 TEA 包括：</p>
+                <ul>
+                    <li data-i18n="eb5.mode3Item1">偏远地区（Rural Area）</li>
+                    <li data-i18n="eb5.mode3Item2">高失业地区（High-Unemployment Area）</li>
+                    <li data-i18n="eb5.mode3Item3">某些基础设施类项目</li>
+                </ul>
+                <p data-i18n="eb5.mode3Note">在 TEA / 农村 / 基础设施项目中投资的 EB-5，最低金额为 800,000 美金，并可享受部分年度签证配额"预留（set-aside）"，有利于部分国家排期压力缓解。</p>
+            </section>
+
+            <!-- 第四部分：办理流程 -->
+            <section class="eb5-section">
+                <h2 data-i18n="eb5.section4Title">四、本所 EB-5 标准办理流程</h2>
+
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <h3 data-i18n="eb5.step1Title">第 1 步：前期评估与整体规划</h3>
+                        <p data-i18n="eb5.step1Desc">由本所进行专业评估，客户提供基础信息。了解申请人家庭成员、身份现状、资金来源构成、可投资金额、风险承受能力。初步说明 EB-5 最新政策、投资金额、排期与配额情况，评估是否适合走直投或区域中心。</p>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="eb5.step2Title">第 2 步：项目选择与初步尽职调查</h3>
+                        <p data-i18n="eb5.step2Desc">本所不代替独立的金融顾问，但会从移民合规角度指出关键风险点。协助客户理解不同项目的地区、就业创造逻辑、资金结构，从移民法规角度审视项目的区域中心资质、文件完整性、RIA 合规要求等。</p>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="eb5.step3Title">第 3 步：资金来源与路径文件准备</h3>
+                        <p data-i18n="eb5.step3Desc">这是 EB-5 成败的关键之一。本所会为客户制定资金来源证明清单，设计"资金路径图"，把资金来源与路径整理成结构化说明，配合律师意见书提交给移民局，减少因"资金来源不清"导致的 RFE / 拒件风险。</p>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="eb5.step4Title">第 4 步：签署项目文件与资金汇出</h3>
+                        <p data-i18n="eb5.step4Desc">在确认项目及律师、顾问均无重大法律/合规疑虑的前提下，客户完成与项目方签署认购文件、合伙协议等，按项目要求将投资资金和相关费用汇入指定托管账户/项目账户。</p>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="eb5.step5Title">第 5 步：I-526 / I-526E 申请递交</h3>
+                        <p data-i18n="eb5.step5Desc">本所负责起草并提交移民请愿书（I-526 / I-526E）、律师意见书、全套资金来源和路径证据、项目方提供的商业计划、经济报告等。如收到 RFE（补件通知）或 NOID（拟拒信），本所将分析审理官的具体疑问，协同准备补充材料和解释。</p>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="eb5.step6Title">第 6 步：I-485 调整身份或领馆移民签证</h3>
+                        <p data-i18n="eb5.step6Desc">当 I-526 / I-526E 获批且排期允许时，申请人在美国境内可通过 I-485 调整身份申请有条件绿卡；申请人在境外可通过领馆程序办理移民签证，体检、面谈、签证签发后入境美国，获得 2 年有条件绿卡。</p>
+                    </div>
+
+                    <div class="process-step">
+                        <h3 data-i18n="eb5.step7Title">第 7 步：I-829 解除条件</h3>
+                        <p data-i18n="eb5.step7Desc">在有条件绿卡即将到期前的一定时间窗口内，需递交 I-829 申请，证明投资仍然维持、未提前抽回，证明至少创造或保留了 10 个全职就业岗位。I-829 获批后，申请人及其家属转为正式永久绿卡持有人。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第五部分：风险提示 -->
+            <section class="eb5-section">
+                <h2 data-i18n="eb5.section5Title">五、风险提示与常见误区</h2>
+
+                <div class="warning-box">
+                    <h4 data-i18n="eb5.risk1Title">"EB-5 就是买房移民"？</h4>
+                    <p data-i18n="eb5.risk1Desc">不是。单纯购买自住房或被动资产（不创造合格就业）不能符合 EB-5 要求；必须投资于"新商业企业"，并且满足就业与资金风险要求。</p>
+                </div>
+
+                <div class="warning-box">
+                    <h4 data-i18n="eb5.risk2Title">"保证回本 / 固定收益"项目要特别警惕</h4>
+                    <p data-i18n="eb5.risk2Desc">法律要求资金"处于风险中"，不能存在事实上的保本承诺；如果项目宣传"本金 100% 保底""固定年化收益且无风险"，可能与 EB-5 法规存在冲突，甚至埋下拒签隐患。</p>
+                </div>
+
+                <div class="warning-box">
+                    <h4 data-i18n="eb5.risk3Title">只看收益，不看合规</h4>
+                    <p data-i18n="eb5.risk3Desc">一些项目可能在商业上看起来收益亮眼，但区域中心资质不稳、合规问题多；就业计算模型站不住脚；资金结构设计与 RIA 要求不符。对 EB-5 申请人来说，绿卡成功率往往比投资收益更重要，法律合规优先。</p>
+                </div>
+
+                <div class="warning-box">
+                    <h4 data-i18n="eb5.risk4Title">忽视最新法规与费用变化</h4>
+                    <p data-i18n="eb5.risk4Desc">RIA 引入了 Integrity Fund、更严密的信息披露和监管机制，项目与投资人都需按要求缴费并接受检查。近年 USCIS 曾尝试大幅上调 EB-5 相关政府费用，当前费用结构需要以最新裁决与官方公告为准。</p>
+                </div>
+            </section>
+
+            <!-- 第六部分：服务内容 -->
+            <section class="eb5-section">
+                <h2 data-i18n="eb5.section6Title">六、本所可以为 EB-5 客户提供的服务</h2>
+
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h4 data-i18n="eb5.service1Title">一对一背景与风险评估</h4>
+                        <p data-i18n="eb5.service1Desc">审核家庭背景、资产结构、资金来源，解释 EB-5 与 EB-1A / NIW / L-1 / E-2 等方案的优缺点与组合路径</p>
+                    </div>
+
+                    <div class="service-item">
+                        <h4 data-i18n="eb5.service2Title">项目合规性审查</h4>
+                        <p data-i18n="eb5.service2Desc">审阅项目移民文件、商业计划、经济报告，提醒结构性风险与政策风险（不提供证券/投资建议）</p>
+                    </div>
+
+                    <div class="service-item">
+                        <h4 data-i18n="eb5.service3Title">资金来源与路径文件规划</h4>
+                        <p data-i18n="eb5.service3Desc">制定个性化资金来源清单，设计资金路径说明、准备图表、撰写说明文书</p>
+                    </div>
+
+                    <div class="service-item">
+                        <h4 data-i18n="eb5.service4Title">撰写并递交申请</h4>
+                        <p data-i18n="eb5.service4Desc">准备律师意见书，整理并递交全套申请材料，与 USCIS 沟通，处理 RFE / NOID</p>
+                    </div>
+
+                    <div class="service-item">
+                        <h4 data-i18n="eb5.service5Title">身份衔接与家庭整体规划</h4>
+                        <p data-i18n="eb5.service5Desc">在美身份维护、与其他移民或非移民身份的衔接，配偶与子女的附属身份与长期规划</p>
+                    </div>
+
+                    <div class="service-item">
+                        <h4 data-i18n="eb5.service6Title">I-829 解除条件阶段协助</h4>
+                        <p data-i18n="eb5.service6Desc">与项目方协同准备就业和运营证明，提交 I-829 并跟进审理进展</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第七部分：FAQ -->
+            <section class="eb5-section">
+                <h2 data-i18n="eb5.section7Title">七、常见问题（FAQ）</h2>
+
+                <div class="faq-item">
+                    <h4 data-i18n="eb5.faq1Q">Q1：EB-5 投资一定会拿回本金吗？</h4>
+                    <p data-i18n="eb5.faq1A">A：法律并不保证本金安全，投资必须"处于风险中"。是否能回本取决于项目实际经营情况和市场风险。建议在专业律师和独立金融顾问的共同协助下选择项目。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-i18n="eb5.faq2Q">Q2：EB-5 投资人必须懂英文、参与日常经营吗？</h4>
+                    <p data-i18n="eb5.faq2A">A：直投项目通常需要更高程度的实际经营参与；区域中心项目往往是被动投资，投资人不参与日常管理，但需要理解项目风险和结构。法律上没有要求必须精通英文，但签署文件前应确保完全理解内容。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-i18n="eb5.faq3Q">Q3：人在中国能不能申请 EB-5？</h4>
+                    <p data-i18n="eb5.faq3A">A：可以。若人在境外，I-526 / I-526E 获批且排期到号后，通过领馆程序获得移民签证入境；若人在美国持其他合法身份，可能有机会在美递交 I-485 调整身份（是否可行需个案分析）。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-i18n="eb5.faq4Q">Q4：现在 EB-5 的排期严重吗？</h4>
+                    <p data-i18n="eb5.faq4A">A：排期情况会因出生国家、投资类别（是否 TEA / 农村 / 基建 set-aside）等因素而变化，需结合当期签证公告与项目类别评估。本所可以在咨询时提供近期排期趋势解读。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4 data-i18n="eb5.faq5Q">Q5：EB-5 会不会被取消或被其它项目取代？</h4>
+                    <p data-i18n="eb5.faq5A">A：EB-5 多年来经历多次改革与争议，2022 年的 RIA 对项目进行了"重启 + 强化监管"。政策环境可能继续变动，甚至存在改革、费用调整等讨论。当前仍是正式有效的法定移民类别，如有重大变动，需以国会立法与 USCIS 官方公告为准。</p>
+                </div>
+            </section>
+
+            <!-- 免责声明 -->
+            <div class="disclaimer">
+                <h3 data-i18n="eb5.disclaimerTitle">重要声明</h3>
+                <ul>
+                    <li data-i18n="eb5.disclaimer1">本页面仅为 EB-5 项目的一般性介绍，不构成对任何个案的正式法律意见，也不构成任何形式的投资建议或收益承诺；</li>
+                    <li data-i18n="eb5.disclaimer2">EB-5 项目本身具有投资风险，本所不代替持牌金融顾问或证券中介；</li>
+                    <li data-i18n="eb5.disclaimer3">美国移民法律、相关法规及政府费用会随时间调整，具体以美国移民局（USCIS）及其他官方渠道的最新信息为准。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 联系方式区域 -->
+        <section id="contact">
+            <div id="footer-container" class="no-map"></div>
+        </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/navigation.js"></script>
+    <script>
+        // 组件加载器
+        async function loadComponent(componentName, targetId) {
+            try {
+                const response = await fetch(`components/${componentName}.html`);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${componentName}`);
+                }
+                const html = await response.text();
+                document.getElementById(targetId).innerHTML = html;
+            } catch (error) {
+                console.error(`Error loading component ${componentName}:`, error);
+            }
+        }
+
+        // 页面加载时自动加载组件
+        document.addEventListener('DOMContentLoaded', async function() {
+            await loadComponent('header', 'header-container');
+            await loadComponent('footer', 'footer-container');
+        });
+    </script>
+</body>
+</html>
