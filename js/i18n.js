@@ -685,7 +685,7 @@ const translations = {
         },
         nav: {
             about: 'About Us',
-            services: 'IP & Cross-border E-commerce',
+            services: 'IP & E-Commerce',
             appointment: 'Immigration',
             contact: 'Contact Us',
             eb5: 'EB-5 Investor Visa',
@@ -706,7 +706,7 @@ const translations = {
             value4: 'Trusted by Clients.'
         },
         services: {
-            title: 'IP & Cross-border E-commerce',
+            title: 'IP & E-Commerce',
             corporate: 'Corporate & Transactional Counsel',
             corporateDesc: 'We advise cross-border e-commerce businesses, technology companies, and creator-led ventures through every stage of growth, including LLC and corporation formation and restructuring. Our work focuses on governance structures, equity and control arrangements among founders and stakeholders, and the drafting and negotiation of core commercial agreements—building repeatable legal infrastructure that supports scalable growth and disciplined risk management.',
             ecommerce: 'E-Commerce & Online Business Compliance',
