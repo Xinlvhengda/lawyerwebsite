@@ -20,7 +20,7 @@ const CONTACT_CONFIG = {
     // 正式联系信息（律师真实信息）
     production: {
         lawyerName: 'Heng Da Law Firm',
-        phone1: '(718)878-4494',
+        phone1: '+1 718 878 4494',
         phone2: '',
         email: 'info@hengdalawfirm.com',
         wechat: '',
